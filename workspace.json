@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-22T05:09:07.441Z",
+  "generatedAtEpochMs": 1787375347441,
+  "generator": {
+    "name": "Code Janitor",
+    "feature": "workspace-memory"
+  },
+  "handoffGuidance": [
+    "Read graphify-out/GRAPH_REPORT.md first for architecture and dependency questions.",
+    "Use workspace.json for machine-readable repo context before scanning broad parts of the repository.",
+    "Use graphify-out/WORKSPACE_MEMORY.md and workspacememory.md for human-readable handoff notes, recent changes, and Git-aware status."
+  ],
+  "workspace": {
+    "name": "e-networkstatus",
+    "root": "c:\\github\\e-networkstatus",
+    "activeFile": "micropython/uptime_kuma.py",
+    "refreshReason": "tracked-change",
+    "outputFiles": {
+      "markdown": "graphify-out/WORKSPACE_MEMORY.md",
+      "markdownMirror": "workspacememory.md",
+      "structuredManifest": "workspace.json"
+    },
+    "suggestedStartingPoints": [
+      "micropython/uptime_kuma.py",
+      "3d",
+      "3d/ping_case.scad",
+      "arduino",
+      "doc",
+      "micropython",
+      "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
+      "micropython/thonny-4.1.6.exe",
+      "README.md"
+    ],
+    "stats": {
+      "totalFiles": 7,
+      "topLevelAreas": [
+        {
+          "name": "[root]",
+          "count": 3
+        },
+        {
+          "name": "micropython",
+          "count": 3
+        },
+        {
+          "name": "3d",
+          "count": 1
+        }
+      ],
+      "primaryFileTypes": [
+        {
+          "name": ".md",
+          "count": 2
+        },
+        {
+          "name": ".exe",
+          "count": 1
+        },
+        {
+          "name": ".json",
+          "count": 1
+        },
+        {
+          "name": ".py",
+          "count": 1
+        },
+        {
+          "name": ".scad",
+          "count": 1
+        },
+        {
+          "name": ".uf2",
+          "count": 1
+        }
+      ],
+      "keyFiles": [
+        "README.md"
+      ],
+      "fileInventory": [
+        {
+          "path": "3d/ping_case.scad",
+          "topLevelArea": "3d",
+          "extension": ".scad",
+          "isKeyFile": false
+        },
+        {
+          "path": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
+          "topLevelArea": "micropython",
+          "extension": ".uf2",
+          "isKeyFile": false
+        },
+        {
+          "path": "micropython/thonny-4.1.6.exe",
+          "topLevelArea": "micropython",
+          "extension": ".exe",
+          "isKeyFile": false
+        },
+        {
+          "path": "micropython/uptime_kuma.py",
+          "topLevelArea": "micropython",
+          "extension": ".py",
+          "isKeyFile": false
+        },
+        {
+          "path": "README.md",
+          "topLevelArea": "[root]",
+          "extension": ".md",
+          "isKeyFile": true
+        },
+        {
+          "path": "workspace.json",
+          "topLevelArea": "[root]",
+          "extension": ".json",
+          "isKeyFile": false
+        },
+        {
+          "path": "workspacememory.md",
+          "topLevelArea": "[root]",
+          "extension": ".md",
+          "isKeyFile": false
+        }
+      ]
+    }
+  },
+  "package": {
+    "available": false,
+    "error": "package.json was not found."
+  },
+  "currentStack": {
+    "lastActivityAt": "2026-08-22T05:09:04.363Z",
+    "trackedChangeCount": 11,
+    "trackedFileSnapshotCount": 4,
+    "changeTypeCounts": {
+      "save": 3,
+      "create": 7,
+      "delete": 0,
+      "rename": 1
+    }
+  },
+  "trackedSnapshots": [
+    {
+      "filePath": "micropython/uptime_kuma.py",
+      "updatedAt": 1787375344363,
+      "lineCount": 101,
+      "charCount": 3439,
+      "hash": "4d5f25ac0f51",
+      "preview": "import network, time / import urequests / from machine import Pin / # This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the moni..."
+    },
+    {
+      "filePath": "3d/ping_case.scad",
+      "updatedAt": 1734837654306.4192,
+      "lineCount": 333,
+      "charCount": 11809,
+      "hash": "ed0e7cb55be7",
+      "preview": "// Case for raspi w - with ping to website ability / $fn=360; / labels_only=0; / wall_thickness=1.6; / case_width=100; / case_length=100; / case_depth=20; / pcb_width=22; / pcb_length=53; / pcb_depth=10; / pcb_hole_di..."
+    },
+    {
+      "filePath": "micropython/thonny-4.1.6.exe",
+      "updatedAt": 1730958211545.1978,
+      "lineCount": 0,
+      "charCount": 0,
+      "hash": "",
+      "preview": "Binary or large file; content preview omitted."
+    },
+    {
+      "filePath": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
+      "updatedAt": 1730950469844.9824,
+      "lineCount": 0,
+      "charCount": 0,
+      "hash": "",
+      "preview": "Binary or large file; content preview omitted."
+    }
+  ],
+  "recentChanges": [
+    {
+      "type": "save",
+      "path": "micropython/uptime_kuma.py",
+      "toPath": "",
+      "summary": "Line 5: inserted 3 lines.",
+      "recordedAt": "2026-08-22T05:09:04.363Z",
+      "recordedAtEpochMs": 1787375344363,
+      "before": {
+        "kind": "text",
+        "lineCount": 99,
+        "charCount": 3154,
+        "hash": "76580d8f89ab",
+        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
+        "updatedAt": 1787375344362
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 101,
+        "charCount": 3439,
+        "hash": "4d5f25ac0f51",
+        "preview": "import network, time / import urequests / from machine import Pin / # This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the moni...",
+        "updatedAt": 1787375344363
+      },
+      "diff": {
+        "lineStart": 5,
+        "removedLines": 0,
+        "addedLines": 3,
+        "summary": "Line 5: inserted 3 lines.",
+        "beforeFragment": "",
+        "afterFragment": "# This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the monitors or groups you want to c..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "micropython/uptime_kuma.py",
+      "toPath": "",
+      "summary": "Line 32: inserted 1 line.",
+      "recordedAt": "2026-08-22T05:07:17.023Z",
+      "recordedAtEpochMs": 1787375237023,
+      "before": {
+        "kind": "text",
+        "lineCount": 99,
+        "charCount": 2883,
+        "hash": "9b9af8b60b14",
+        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
+        "updatedAt": 1787375237023
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 99,
+        "charCount": 3154,
+        "hash": "76580d8f89ab",
+        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
+        "updatedAt": 1787375237023
+      },
+      "diff": {
+        "lineStart": 32,
+        "removedLines": 0,
+        "addedLines": 1,
+        "summary": "Line 32: inserted 1 line.",
+        "beforeFragment": "",
+        "afterFragment": "# replace with your actual Uptime Kuma server URL, if memory serves me correctly, this is the url of a \"GROUP\" badge, which will show the status of all monitors in that group. I..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "micropython/uptime_kuma.py",
+      "toPath": "",
+      "summary": "Line 51: replaced 2 lines with 2 lines.",
+      "recordedAt": "2026-08-22T05:06:07.959Z",
+      "recordedAtEpochMs": 1787375167959,
+      "before": {
+        "kind": "text",
+        "lineCount": 99,
+        "charCount": 2794,
+        "hash": "2ff14c515b0d",
+        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
+        "updatedAt": 1787375167959
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 99,
+        "charCount": 2883,
+        "hash": "9b9af8b60b14",
+        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
+        "updatedAt": 1787375167959
+      },
+      "diff": {
+        "lineStart": 51,
+        "removedLines": 2,
+        "addedLines": 2,
+        "summary": "Line 51: replaced 2 lines with 2 lines.",
+        "beforeFragment": "vgoogs' / password = 'alph4b3tsoup1234!'",
+        "afterFragment": "wifi_ssid' # replace with your actual Wi-Fi credentials / password = 'wifi_password' # replace with your actual Wi-Fi credentials"
+      }
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case.scad",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:03:25.568Z",
+      "recordedAtEpochMs": 1787375005568,
+      "before": null,
+      "after": {
+        "kind": "text",
+        "lineCount": 333,
+        "charCount": 11809,
+        "hash": "ed0e7cb55be7",
+        "preview": "// Case for raspi w - with ping to website ability / $fn=360; / labels_only=0; / wall_thickness=1.6; / case_width=100; / case_length=100; / case_depth=20; / pcb_width=22; / pcb_length=53; / pcb_depth=10; / pcb_hole_di...",
+        "updatedAt": 1734837654306.4192,
+        "extension": ".scad",
+        "sizeBytes": 11809
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:03:04.698Z",
+      "recordedAtEpochMs": 1787374984698,
+      "before": null,
+      "after": null,
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "micropython/thonny-4.1.6.exe",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:02:58.529Z",
+      "recordedAtEpochMs": 1787374978529,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".exe",
+        "sizeBytes": 23309536,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1730958211545.1978
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "micropython/uptime_kuma.py",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:02:42.292Z",
+      "recordedAtEpochMs": 1787374962292,
+      "before": null,
+      "after": {
+        "kind": "text",
+        "lineCount": 99,
+        "charCount": 2794,
+        "hash": "2ff14c515b0d",
+        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
+        "updatedAt": 1734136855707.3406,
+        "extension": ".py",
+        "sizeBytes": 2794
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:02:25.547Z",
+      "recordedAtEpochMs": 1787374945547,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".uf2",
+        "sizeBytes": 1726976,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1730950469844.9824
+      },
+      "diff": null
+    },
+    {
+      "type": "rename",
+      "path": "arduino",
+      "toPath": "micropython",
+      "summary": "Renamed file.",
+      "recordedAt": "2026-08-22T05:01:44.746Z",
+      "recordedAtEpochMs": 1787374904746,
+      "before": null,
+      "after": null,
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "doc",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T04:52:06.166Z",
+      "recordedAtEpochMs": 1787374326166,
+      "before": null,
+      "after": null,
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "arduino",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T04:51:56.336Z",
+      "recordedAtEpochMs": 1787374316336,
+      "before": null,
+      "after": null,
+      "diff": null
+    }
+  ],
+  "hotFiles": [
+    {
+      "filePath": "micropython/uptime_kuma.py",
+      "count": 4
+    },
+    {
+      "filePath": "3d",
+      "count": 1
+    },
+    {
+      "filePath": "3d/ping_case.scad",
+      "count": 1
+    },
+    {
+      "filePath": "arduino",
+      "count": 1
+    },
+    {
+      "filePath": "doc",
+      "count": 1
+    },
+    {
+      "filePath": "micropython",
+      "count": 1
+    },
+    {
+      "filePath": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
+      "count": 1
+    },
+    {
+      "filePath": "micropython/thonny-4.1.6.exe",
+      "count": 1
+    }
+  ],
+  "git": {
+    "available": true,
+    "branch": "main",
+    "headSummary": "2026-08-22 c5a7bda feat: 3d model of case for device",
+    "statusSummary": "4 untrackeds",
+    "changedFileCount": 4,
+    "statusLines": [
+      "?? graphify-out/",
+      "?? micropython/",
+      "?? workspace.json",
+      "?? workspacememory.md"
+    ],
+    "error": ""
+  },
+  "github": {
+    "available": true,
+    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 5e8ec40 by Vernon Muddle on 2026-08-22\n  first commit\n\nURL: https://github.com/vmuddle/e-networkstatus"
+  },
+  "graphify": {
+    "reportAvailable": false,
+    "graphAvailable": false,
+    "reportPath": "",
+    "graphPath": "",
+    "highlights": ""
+  },
+  "projectPlanner": null,
+  "agentNotes": [
+    "For recent repo changes, check recentChanges, trackedSnapshots, hotFiles, and git.",
+    "For architecture questions, combine graphify highlights with the Graphify report.",
+    "For machine-readable repo context, prefer this workspace.json manifest before broad repo scans."
+  ]
+}
