@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T05:09:07.441Z",
-  "generatedAtEpochMs": 1787375347441,
+  "generatedAt": "2026-08-22T05:23:00.618Z",
+  "generatedAtEpochMs": 1787376180618,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -14,7 +14,7 @@
   "workspace": {
     "name": "e-networkstatus",
     "root": "c:\\github\\e-networkstatus",
-    "activeFile": "micropython/uptime_kuma.py",
+    "activeFile": "README.md",
     "refreshReason": "tracked-change",
     "outputFiles": {
       "markdown": "graphify-out/WORKSPACE_MEMORY.md",
@@ -22,19 +22,22 @@
       "structuredManifest": "workspace.json"
     },
     "suggestedStartingPoints": [
+      "README.md",
       "micropython/uptime_kuma.py",
-      "3d",
       "3d/ping_case.scad",
-      "arduino",
-      "doc",
-      "micropython",
-      "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
-      "micropython/thonny-4.1.6.exe",
-      "README.md"
+      "3d",
+      "3d/ledHole-5.stl",
+      "3d/ledHole.scad",
+      "3d/ping_case_back.3mf",
+      "3d/ping_case_back.stl"
     ],
     "stats": {
-      "totalFiles": 7,
+      "totalFiles": 17,
       "topLevelAreas": [
+        {
+          "name": "3d",
+          "count": 11
+        },
         {
           "name": "[root]",
           "count": 3
@@ -42,15 +45,23 @@
         {
           "name": "micropython",
           "count": 3
-        },
-        {
-          "name": "3d",
-          "count": 1
         }
       ],
       "primaryFileTypes": [
         {
+          "name": ".stl",
+          "count": 7
+        },
+        {
+          "name": ".3mf",
+          "count": 2
+        },
+        {
           "name": ".md",
+          "count": 2
+        },
+        {
+          "name": ".scad",
           "count": 2
         },
         {
@@ -66,10 +77,6 @@
           "count": 1
         },
         {
-          "name": ".scad",
-          "count": 1
-        },
-        {
           "name": ".uf2",
           "count": 1
         }
@@ -79,9 +86,69 @@
       ],
       "fileInventory": [
         {
+          "path": "3d/ledHole-5.stl",
+          "topLevelArea": "3d",
+          "extension": ".stl",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ledHole.scad",
+          "topLevelArea": "3d",
+          "extension": ".scad",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ping_case_back.3mf",
+          "topLevelArea": "3d",
+          "extension": ".3mf",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ping_case_back.stl",
+          "topLevelArea": "3d",
+          "extension": ".stl",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ping_case-2.stl",
+          "topLevelArea": "3d",
+          "extension": ".stl",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ping_case-5mm-front.stl",
+          "topLevelArea": "3d",
+          "extension": ".stl",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ping_case-5mm-labels.stl",
+          "topLevelArea": "3d",
+          "extension": ".stl",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ping_case-5mm-leds.stl",
+          "topLevelArea": "3d",
+          "extension": ".stl",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ping_case.3mf",
+          "topLevelArea": "3d",
+          "extension": ".3mf",
+          "isKeyFile": false
+        },
+        {
           "path": "3d/ping_case.scad",
           "topLevelArea": "3d",
           "extension": ".scad",
+          "isKeyFile": false
+        },
+        {
+          "path": "3d/ping_case.stl",
+          "topLevelArea": "3d",
+          "extension": ".stl",
           "isKeyFile": false
         },
         {
@@ -128,17 +195,25 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-22T05:09:04.363Z",
-    "trackedChangeCount": 11,
-    "trackedFileSnapshotCount": 4,
+    "lastActivityAt": "2026-08-22T05:22:58.771Z",
+    "trackedChangeCount": 25,
+    "trackedFileSnapshotCount": 15,
     "changeTypeCounts": {
-      "save": 3,
-      "create": 7,
+      "save": 6,
+      "create": 18,
       "delete": 0,
       "rename": 1
     }
   },
   "trackedSnapshots": [
+    {
+      "filePath": "README.md",
+      "updatedAt": 1787376102021,
+      "lineCount": 15,
+      "charCount": 676,
+      "hash": "34bae5de81fc",
+      "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / It uses \"uptime kuma\" for the actual hea..."
+    },
     {
       "filePath": "micropython/uptime_kuma.py",
       "updatedAt": 1787375344363,
@@ -146,6 +221,22 @@
       "charCount": 3439,
       "hash": "4d5f25ac0f51",
       "preview": "import network, time / import urequests / from machine import Pin / # This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the moni..."
+    },
+    {
+      "filePath": "3d/ping_case_back.3mf",
+      "updatedAt": 1734838002119.0916,
+      "lineCount": 132,
+      "charCount": 31704,
+      "hash": "6534dea88bb1",
+      "preview": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000Uk�Y\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml��Kj�0\u0010��9�ж�r[(��΢�\u0013�\u0007\u0010��\u0016�FB\u001a\u0007��\u001dŅ�!�r�?>��\u001eW��\u0019R�\u0001;y_7R\u0000�0X�:�y����?���\bY�\u0017s'g���T63x��\u0010\u0001Y\u0019C��L���|�\t�C�<)\u0013�\u0000���!��h�`ԋ#񾲰�\u0013�,��f-�N�\u0018�5�XWg\u001cv��Qs��ɳ���R]a�0��\u0001�ŏ�׸..."
+    },
+    {
+      "filePath": "3d/ping_case_back.stl",
+      "updatedAt": 1734837673406.295,
+      "lineCount": 2,
+      "charCount": 3080,
+      "hash": "1cae5e72eab5",
+      "preview": "OpenSCAD Model / \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000<\u0000\u0000\u0000\u0000\u0000��\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000033A�33A���L?33A�33A����@33A�33AB���@\u0000\u0000\u0000\u0000��\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000033A�33AB��L?33A�33A���L?33A�33AB���@\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�?33A�33AB���@33A�33A..."
     },
     {
       "filePath": "3d/ping_case.scad",
@@ -156,16 +247,24 @@
       "preview": "// Case for raspi w - with ping to website ability / $fn=360; / labels_only=0; / wall_thickness=1.6; / case_width=100; / case_length=100; / case_depth=20; / pcb_width=22; / pcb_length=53; / pcb_depth=10; / pcb_hole_di..."
     },
     {
-      "filePath": "micropython/thonny-4.1.6.exe",
-      "updatedAt": 1730958211545.1978,
+      "filePath": "3d/ping_case.3mf",
+      "updatedAt": 1731731573909.3264,
       "lineCount": 0,
       "charCount": 0,
       "hash": "",
       "preview": "Binary or large file; content preview omitted."
     },
     {
-      "filePath": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
-      "updatedAt": 1730950469844.9824,
+      "filePath": "3d/ping_case-5mm-front.stl",
+      "updatedAt": 1731728570938.5215,
+      "lineCount": 0,
+      "charCount": 0,
+      "hash": "",
+      "preview": "Binary or large file; content preview omitted."
+    },
+    {
+      "filePath": "3d/ping_case-5mm-labels.stl",
+      "updatedAt": 1731726741590.6282,
       "lineCount": 0,
       "charCount": 0,
       "hash": "",
@@ -173,6 +272,301 @@
     }
   ],
   "recentChanges": [
+    {
+      "type": "create",
+      "path": "3d/ping_case-5mm-labels.stl",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.771Z",
+      "recordedAtEpochMs": 1787376178771,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".stl",
+        "sizeBytes": 10104884,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1731726741590.6282
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case-5mm-front.stl",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.768Z",
+      "recordedAtEpochMs": 1787376178768,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".stl",
+        "sizeBytes": 49463895,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1731728570938.5215
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case-2.stl",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.766Z",
+      "recordedAtEpochMs": 1787376178766,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".stl",
+        "sizeBytes": 7245497,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1731284293689.0356
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case_back.stl",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.765Z",
+      "recordedAtEpochMs": 1787376178765,
+      "before": null,
+      "after": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 3080,
+        "hash": "1cae5e72eab5",
+        "preview": "OpenSCAD Model / \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000<\u0000\u0000\u0000\u0000\u0000��\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000033A�33A���L?33A�33A����@33A�33AB���@\u0000\u0000\u0000\u0000��\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000033A�33AB��L?33A�33A���L?33A�33AB���@\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�?33A�33AB���@33A�33A...",
+        "updatedAt": 1734837673406.295,
+        "extension": ".stl",
+        "sizeBytes": 3084
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case_back.3mf",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.748Z",
+      "recordedAtEpochMs": 1787376178748,
+      "before": null,
+      "after": {
+        "kind": "text",
+        "lineCount": 132,
+        "charCount": 31704,
+        "hash": "6534dea88bb1",
+        "preview": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000Uk�Y\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml��Kj�0\u0010��9�ж�r[(��΢�\u0013�\u0007\u0010��\u0016�FB\u001a\u0007��\u001dŅ�!�r�?>��\u001eW��\u0019R�\u0001;y_7R\u0000�0X�:�y����?���\bY�\u0017s'g���T63x��\u0010\u0001Y\u0019C��L���|�\t�C�<)\u0013�\u0000���!��h�`ԋ#񾲰�\u0013�,��f-�N�\u0018�5�XWg\u001cv��Qs��ɳ���R]a�0��\u0001�ŏ�׸...",
+        "updatedAt": 1734838002119.0916,
+        "extension": ".3mf",
+        "sizeBytes": 32992
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case.stl",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.726Z",
+      "recordedAtEpochMs": 1787376178726,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".stl",
+        "sizeBytes": 11431782,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1731061941067.7886
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case.scad",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.725Z",
+      "recordedAtEpochMs": 1787376178725,
+      "before": null,
+      "after": {
+        "kind": "text",
+        "lineCount": 333,
+        "charCount": 11809,
+        "hash": "ed0e7cb55be7",
+        "preview": "// Case for raspi w - with ping to website ability / $fn=360; / labels_only=0; / wall_thickness=1.6; / case_width=100; / case_length=100; / case_depth=20; / pcb_width=22; / pcb_length=53; / pcb_depth=10; / pcb_hole_di...",
+        "updatedAt": 1734837654306.4192,
+        "extension": ".scad",
+        "sizeBytes": 11809
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case.3mf",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.695Z",
+      "recordedAtEpochMs": 1787376178695,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".3mf",
+        "sizeBytes": 11345788,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1731731573909.3264
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ledHole-5.stl",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.688Z",
+      "recordedAtEpochMs": 1787376178688,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".stl",
+        "sizeBytes": 1870765,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1731397963501.5298
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ledHole.scad",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.686Z",
+      "recordedAtEpochMs": 1787376178686,
+      "before": null,
+      "after": {
+        "kind": "text",
+        "lineCount": 39,
+        "charCount": 762,
+        "hash": "b6f55257d5f0",
+        "preview": "//led measure / $fn=360; / largeLedDiameter_A=5.1; / largeLedDiameter_B=5.3; / largeLedDiameter_C=5.5; / difference() { / translate([0,0,1]) / cube([30,50,2], true); / translate([10,-20,0]) { / cylinder(h=2, d=largeLe...",
+        "updatedAt": 1731397909300.919,
+        "extension": ".scad",
+        "sizeBytes": 762
+      },
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "3d/ping_case-5mm-leds.stl",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-22T05:22:58.658Z",
+      "recordedAtEpochMs": 1787376178658,
+      "before": null,
+      "after": {
+        "kind": "file",
+        "extension": ".stl",
+        "sizeBytes": 861684,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1731726712384.1194
+      },
+      "diff": null
+    },
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 1: replaced 13 lines with 15 lines.",
+      "recordedAt": "2026-08-22T05:21:42.021Z",
+      "recordedAtEpochMs": 1787376102021,
+      "before": {
+        "kind": "text",
+        "lineCount": 13,
+        "charCount": 1262,
+        "hash": "6794efe22de6",
+        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
+        "updatedAt": 1787376102021
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 15,
+        "charCount": 676,
+        "hash": "34bae5de81fc",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / It uses \"uptime kuma\" for the actual hea...",
+        "updatedAt": 1787376102021
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 13,
+        "addedLines": 15,
+        "summary": "Line 1: replaced 13 lines with 15 lines.",
+        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
+        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 1: replaced 13 lines with 13 lines.",
+      "recordedAt": "2026-08-22T05:20:52.512Z",
+      "recordedAtEpochMs": 1787376052512,
+      "before": {
+        "kind": "text",
+        "lineCount": 13,
+        "charCount": 1184,
+        "hash": "af1a7f277c17",
+        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
+        "updatedAt": 1787376052512
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 13,
+        "charCount": 630,
+        "hash": "709dd0ccd561",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / It uses \"uptime kuma\" for the actual hea...",
+        "updatedAt": 1787376052512
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 13,
+        "addedLines": 13,
+        "summary": "Line 1: replaced 13 lines with 13 lines.",
+        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
+        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 1: replaced 2 lines with 13 lines.",
+      "recordedAt": "2026-08-22T05:19:50.780Z",
+      "recordedAtEpochMs": 1787375990780,
+      "before": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 40,
+        "hash": "b1e900150882",
+        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000",
+        "updatedAt": 1787375990779
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 13,
+        "charCount": 591,
+        "hash": "95d684d554c9",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / It uses \"uptime kuma\" for the actual hea...",
+        "updatedAt": 1787375990780
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 2,
+        "addedLines": 13,
+        "summary": "Line 1: replaced 2 lines with 13 lines.",
+        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000",
+        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
+      }
+    },
     {
       "type": "save",
       "path": "micropython/uptime_kuma.py",
@@ -204,188 +598,6 @@
         "beforeFragment": "",
         "afterFragment": "# This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the monitors or groups you want to c..."
       }
-    },
-    {
-      "type": "save",
-      "path": "micropython/uptime_kuma.py",
-      "toPath": "",
-      "summary": "Line 32: inserted 1 line.",
-      "recordedAt": "2026-08-22T05:07:17.023Z",
-      "recordedAtEpochMs": 1787375237023,
-      "before": {
-        "kind": "text",
-        "lineCount": 99,
-        "charCount": 2883,
-        "hash": "9b9af8b60b14",
-        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
-        "updatedAt": 1787375237023
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 99,
-        "charCount": 3154,
-        "hash": "76580d8f89ab",
-        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
-        "updatedAt": 1787375237023
-      },
-      "diff": {
-        "lineStart": 32,
-        "removedLines": 0,
-        "addedLines": 1,
-        "summary": "Line 32: inserted 1 line.",
-        "beforeFragment": "",
-        "afterFragment": "# replace with your actual Uptime Kuma server URL, if memory serves me correctly, this is the url of a \"GROUP\" badge, which will show the status of all monitors in that group. I..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "micropython/uptime_kuma.py",
-      "toPath": "",
-      "summary": "Line 51: replaced 2 lines with 2 lines.",
-      "recordedAt": "2026-08-22T05:06:07.959Z",
-      "recordedAtEpochMs": 1787375167959,
-      "before": {
-        "kind": "text",
-        "lineCount": 99,
-        "charCount": 2794,
-        "hash": "2ff14c515b0d",
-        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
-        "updatedAt": 1787375167959
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 99,
-        "charCount": 2883,
-        "hash": "9b9af8b60b14",
-        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
-        "updatedAt": 1787375167959
-      },
-      "diff": {
-        "lineStart": 51,
-        "removedLines": 2,
-        "addedLines": 2,
-        "summary": "Line 51: replaced 2 lines with 2 lines.",
-        "beforeFragment": "vgoogs' / password = 'alph4b3tsoup1234!'",
-        "afterFragment": "wifi_ssid' # replace with your actual Wi-Fi credentials / password = 'wifi_password' # replace with your actual Wi-Fi credentials"
-      }
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case.scad",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:03:25.568Z",
-      "recordedAtEpochMs": 1787375005568,
-      "before": null,
-      "after": {
-        "kind": "text",
-        "lineCount": 333,
-        "charCount": 11809,
-        "hash": "ed0e7cb55be7",
-        "preview": "// Case for raspi w - with ping to website ability / $fn=360; / labels_only=0; / wall_thickness=1.6; / case_width=100; / case_length=100; / case_depth=20; / pcb_width=22; / pcb_length=53; / pcb_depth=10; / pcb_hole_di...",
-        "updatedAt": 1734837654306.4192,
-        "extension": ".scad",
-        "sizeBytes": 11809
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:03:04.698Z",
-      "recordedAtEpochMs": 1787374984698,
-      "before": null,
-      "after": null,
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "micropython/thonny-4.1.6.exe",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:02:58.529Z",
-      "recordedAtEpochMs": 1787374978529,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".exe",
-        "sizeBytes": 23309536,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1730958211545.1978
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "micropython/uptime_kuma.py",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:02:42.292Z",
-      "recordedAtEpochMs": 1787374962292,
-      "before": null,
-      "after": {
-        "kind": "text",
-        "lineCount": 99,
-        "charCount": 2794,
-        "hash": "2ff14c515b0d",
-        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
-        "updatedAt": 1734136855707.3406,
-        "extension": ".py",
-        "sizeBytes": 2794
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:02:25.547Z",
-      "recordedAtEpochMs": 1787374945547,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".uf2",
-        "sizeBytes": 1726976,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1730950469844.9824
-      },
-      "diff": null
-    },
-    {
-      "type": "rename",
-      "path": "arduino",
-      "toPath": "micropython",
-      "summary": "Renamed file.",
-      "recordedAt": "2026-08-22T05:01:44.746Z",
-      "recordedAtEpochMs": 1787374904746,
-      "before": null,
-      "after": null,
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "doc",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T04:52:06.166Z",
-      "recordedAtEpochMs": 1787374326166,
-      "before": null,
-      "after": null,
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "arduino",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T04:51:56.336Z",
-      "recordedAtEpochMs": 1787374316336,
-      "before": null,
-      "after": null,
-      "diff": null
     }
   ],
   "hotFiles": [
@@ -394,51 +606,61 @@
       "count": 4
     },
     {
+      "filePath": "README.md",
+      "count": 3
+    },
+    {
+      "filePath": "3d/ping_case.scad",
+      "count": 2
+    },
+    {
       "filePath": "3d",
       "count": 1
     },
     {
-      "filePath": "3d/ping_case.scad",
+      "filePath": "3d/ledHole-5.stl",
       "count": 1
     },
     {
-      "filePath": "arduino",
+      "filePath": "3d/ledHole.scad",
       "count": 1
     },
     {
-      "filePath": "doc",
+      "filePath": "3d/ping_case_back.3mf",
       "count": 1
     },
     {
-      "filePath": "micropython",
-      "count": 1
-    },
-    {
-      "filePath": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
-      "count": 1
-    },
-    {
-      "filePath": "micropython/thonny-4.1.6.exe",
+      "filePath": "3d/ping_case_back.stl",
       "count": 1
     }
   ],
   "git": {
     "available": true,
     "branch": "main",
-    "headSummary": "2026-08-22 c5a7bda feat: 3d model of case for device",
-    "statusSummary": "4 untrackeds",
-    "changedFileCount": 4,
+    "headSummary": "2026-08-22 9007537 AI cache",
+    "statusSummary": "4 modifieds, 10 untrackeds",
+    "changedFileCount": 14,
     "statusLines": [
-      "?? graphify-out/",
-      "?? micropython/",
-      "?? workspace.json",
-      "?? workspacememory.md"
+      "M README.md",
+      "M graphify-out/WORKSPACE_MEMORY.md",
+      "M workspace.json",
+      "M workspacememory.md",
+      "?? 3d/ledHole-5.stl",
+      "?? 3d/ledHole.scad",
+      "?? 3d/ping_case-2.stl",
+      "?? 3d/ping_case-5mm-front.stl",
+      "?? 3d/ping_case-5mm-labels.stl",
+      "?? 3d/ping_case-5mm-leds.stl",
+      "?? 3d/ping_case.3mf",
+      "?? 3d/ping_case.stl",
+      "?? 3d/ping_case_back.3mf",
+      "?? 3d/ping_case_back.stl"
     ],
     "error": ""
   },
   "github": {
     "available": true,
-    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 5e8ec40 by Vernon Muddle on 2026-08-22\n  first commit\n\nURL: https://github.com/vmuddle/e-networkstatus"
+    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 9007537 by Vernon Muddle on 2026-08-22\n  AI cache\n\nURL: https://github.com/vmuddle/e-networkstatus"
   },
   "graphify": {
     "reportAvailable": false,
