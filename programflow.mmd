@@ -1,0 +1,32 @@
+---
+references:
+  - "File: /micropython/uptime_kuma.py"
+generationTime: 2026-08-22T05:14:07.575Z
+---
+flowchart TD
+    A(["Program Start"]) --> B["Initialize portLookup and GPIO pins"]
+    B --> C["Turn power LED on"]
+    C --> D[["start_network()"]]
+
+    D --> E["Configure and activate WLAN"]
+    E --> F{"Connected within 10 seconds?"}
+    F -->|No| G["Raise RuntimeError"]
+    F -->|Yes| H["Print network configuration"]
+    H --> I["Enter main loop"]
+
+    I --> J{"More ports to process?"}
+    J -->|Yes| K["Turn power LED off"]
+    K --> L[["getStatus(statusId)"]]
+    L --> M[["buildUrl(id)"]]
+    M --> N["Request Uptime Kuma status"]
+    N --> O{"Response contains Up?"}
+    O -->|Yes| P["Turn port LED on"]
+    O -->|No| Q["Turn port LED off"]
+    P --> R["Turn power LED on"]
+    Q --> R
+    R --> J
+
+    J -->|No| S["Sleep 10 seconds"]
+    S --> I
+
+    G --> T(["Program Exit"])

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T05:23:00.618Z",
-  "generatedAtEpochMs": 1787376180618,
+  "generatedAt": "2026-08-24T22:31:47.242Z",
+  "generatedAtEpochMs": 1787610707242,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -14,7 +14,7 @@
   "workspace": {
     "name": "e-networkstatus",
     "root": "c:\\github\\e-networkstatus",
-    "activeFile": "README.md",
+    "activeFile": "programflow.mmd",
     "refreshReason": "tracked-change",
     "outputFiles": {
       "markdown": "graphify-out/WORKSPACE_MEMORY.md",
@@ -22,17 +22,17 @@
       "structuredManifest": "workspace.json"
     },
     "suggestedStartingPoints": [
-      "README.md",
+      "programflow.mmd",
       "micropython/uptime_kuma.py",
+      "README.md",
       "3d/ping_case.scad",
+      "micropython/config_mgr.py",
       "3d",
       "3d/ledHole-5.stl",
-      "3d/ledHole.scad",
-      "3d/ping_case_back.3mf",
-      "3d/ping_case_back.stl"
+      "3d/ledHole.scad"
     ],
     "stats": {
-      "totalFiles": 17,
+      "totalFiles": 19,
       "topLevelAreas": [
         {
           "name": "3d",
@@ -40,11 +40,11 @@
         },
         {
           "name": "[root]",
-          "count": 3
+          "count": 4
         },
         {
           "name": "micropython",
-          "count": 3
+          "count": 4
         }
       ],
       "primaryFileTypes": [
@@ -61,6 +61,10 @@
           "count": 2
         },
         {
+          "name": ".py",
+          "count": 2
+        },
+        {
           "name": ".scad",
           "count": 2
         },
@@ -73,11 +77,7 @@
           "count": 1
         },
         {
-          "name": ".py",
-          "count": 1
-        },
-        {
-          "name": ".uf2",
+          "name": ".mmd",
           "count": 1
         }
       ],
@@ -152,6 +152,12 @@
           "isKeyFile": false
         },
         {
+          "path": "micropython/config_mgr.py",
+          "topLevelArea": "micropython",
+          "extension": ".py",
+          "isKeyFile": false
+        },
+        {
           "path": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
           "topLevelArea": "micropython",
           "extension": ".uf2",
@@ -167,6 +173,12 @@
           "path": "micropython/uptime_kuma.py",
           "topLevelArea": "micropython",
           "extension": ".py",
+          "isKeyFile": false
+        },
+        {
+          "path": "programflow.mmd",
+          "topLevelArea": "[root]",
+          "extension": ".mmd",
           "isKeyFile": false
         },
         {
@@ -195,17 +207,33 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-22T05:22:58.771Z",
-    "trackedChangeCount": 25,
-    "trackedFileSnapshotCount": 15,
+    "lastActivityAt": "2026-08-24T22:31:32.725Z",
+    "trackedChangeCount": 29,
+    "trackedFileSnapshotCount": 17,
     "changeTypeCounts": {
-      "save": 6,
-      "create": 18,
+      "save": 8,
+      "create": 20,
       "delete": 0,
       "rename": 1
     }
   },
   "trackedSnapshots": [
+    {
+      "filePath": "micropython/config_mgr.py",
+      "updatedAt": 1787610686182.7422,
+      "lineCount": 0,
+      "charCount": 0,
+      "hash": "empty",
+      "preview": ""
+    },
+    {
+      "filePath": "programflow.mmd",
+      "updatedAt": 1787529472810.7144,
+      "lineCount": 0,
+      "charCount": 0,
+      "hash": "empty",
+      "preview": ""
+    },
     {
       "filePath": "README.md",
       "updatedAt": 1787376102021,
@@ -253,25 +281,71 @@
       "charCount": 0,
       "hash": "",
       "preview": "Binary or large file; content preview omitted."
-    },
-    {
-      "filePath": "3d/ping_case-5mm-front.stl",
-      "updatedAt": 1731728570938.5215,
-      "lineCount": 0,
-      "charCount": 0,
-      "hash": "",
-      "preview": "Binary or large file; content preview omitted."
-    },
-    {
-      "filePath": "3d/ping_case-5mm-labels.stl",
-      "updatedAt": 1731726741590.6282,
-      "lineCount": 0,
-      "charCount": 0,
-      "hash": "",
-      "preview": "Binary or large file; content preview omitted."
     }
   ],
   "recentChanges": [
+    {
+      "type": "save",
+      "path": "micropython/config_mgr.py",
+      "toPath": "",
+      "summary": "",
+      "recordedAt": "2026-08-24T22:31:32.725Z",
+      "recordedAtEpochMs": 1787610692725,
+      "before": null,
+      "after": null,
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "micropython/config_mgr.py",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-24T22:31:26.190Z",
+      "recordedAtEpochMs": 1787610686190,
+      "before": null,
+      "after": {
+        "kind": "text",
+        "lineCount": 0,
+        "charCount": 0,
+        "hash": "empty",
+        "preview": "",
+        "updatedAt": 1787610686182.7422,
+        "extension": ".py",
+        "sizeBytes": 0
+      },
+      "diff": null
+    },
+    {
+      "type": "save",
+      "path": "programflow.mmd",
+      "toPath": "",
+      "summary": "",
+      "recordedAt": "2026-08-23T23:57:52.842Z",
+      "recordedAtEpochMs": 1787529472842,
+      "before": null,
+      "after": null,
+      "diff": null
+    },
+    {
+      "type": "create",
+      "path": "programflow.mmd",
+      "toPath": "",
+      "summary": "Created file.",
+      "recordedAt": "2026-08-23T23:57:52.814Z",
+      "recordedAtEpochMs": 1787529472814,
+      "before": null,
+      "after": {
+        "kind": "text",
+        "lineCount": 0,
+        "charCount": 0,
+        "hash": "empty",
+        "preview": "",
+        "updatedAt": 1787529472810.7144,
+        "extension": ".mmd",
+        "sizeBytes": 0
+      },
+      "diff": null
+    },
     {
       "type": "create",
       "path": "3d/ping_case-5mm-labels.stl",
@@ -470,134 +544,6 @@
         "updatedAt": 1731726712384.1194
       },
       "diff": null
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: replaced 13 lines with 15 lines.",
-      "recordedAt": "2026-08-22T05:21:42.021Z",
-      "recordedAtEpochMs": 1787376102021,
-      "before": {
-        "kind": "text",
-        "lineCount": 13,
-        "charCount": 1262,
-        "hash": "6794efe22de6",
-        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
-        "updatedAt": 1787376102021
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 15,
-        "charCount": 676,
-        "hash": "34bae5de81fc",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / It uses \"uptime kuma\" for the actual hea...",
-        "updatedAt": 1787376102021
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 13,
-        "addedLines": 15,
-        "summary": "Line 1: replaced 13 lines with 15 lines.",
-        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: replaced 13 lines with 13 lines.",
-      "recordedAt": "2026-08-22T05:20:52.512Z",
-      "recordedAtEpochMs": 1787376052512,
-      "before": {
-        "kind": "text",
-        "lineCount": 13,
-        "charCount": 1184,
-        "hash": "af1a7f277c17",
-        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
-        "updatedAt": 1787376052512
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 13,
-        "charCount": 630,
-        "hash": "709dd0ccd561",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / It uses \"uptime kuma\" for the actual hea...",
-        "updatedAt": 1787376052512
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 13,
-        "addedLines": 13,
-        "summary": "Line 1: replaced 13 lines with 13 lines.",
-        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: replaced 2 lines with 13 lines.",
-      "recordedAt": "2026-08-22T05:19:50.780Z",
-      "recordedAtEpochMs": 1787375990780,
-      "before": {
-        "kind": "text",
-        "lineCount": 2,
-        "charCount": 40,
-        "hash": "b1e900150882",
-        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000",
-        "updatedAt": 1787375990779
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 13,
-        "charCount": 591,
-        "hash": "95d684d554c9",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / It uses \"uptime kuma\" for the actual hea...",
-        "updatedAt": 1787375990780
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 2,
-        "addedLines": 13,
-        "summary": "Line 1: replaced 2 lines with 13 lines.",
-        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "micropython/uptime_kuma.py",
-      "toPath": "",
-      "summary": "Line 5: inserted 3 lines.",
-      "recordedAt": "2026-08-22T05:09:04.363Z",
-      "recordedAtEpochMs": 1787375344363,
-      "before": {
-        "kind": "text",
-        "lineCount": 99,
-        "charCount": 3154,
-        "hash": "76580d8f89ab",
-        "preview": "import network, time / import urequests / from machine import Pin / portLookup = { \"GP1\": 2 ,  # Internet / \"GP2\": 4 ,  # Garage / \"GP3\": 8,   # Google Router / \"GP4\": 29,   # switch A / \"GP5\": 30,   # switch B / \"GP6...",
-        "updatedAt": 1787375344362
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 101,
-        "charCount": 3439,
-        "hash": "4d5f25ac0f51",
-        "preview": "import network, time / import urequests / from machine import Pin / # This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the moni...",
-        "updatedAt": 1787375344363
-      },
-      "diff": {
-        "lineStart": 5,
-        "removedLines": 0,
-        "addedLines": 3,
-        "summary": "Line 5: inserted 3 lines.",
-        "beforeFragment": "",
-        "afterFragment": "# This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the monitors or groups you want to c..."
-      }
     }
   ],
   "hotFiles": [
@@ -614,6 +560,14 @@
       "count": 2
     },
     {
+      "filePath": "micropython/config_mgr.py",
+      "count": 2
+    },
+    {
+      "filePath": "programflow.mmd",
+      "count": 2
+    },
+    {
       "filePath": "3d",
       "count": 1
     },
@@ -624,43 +578,26 @@
     {
       "filePath": "3d/ledHole.scad",
       "count": 1
-    },
-    {
-      "filePath": "3d/ping_case_back.3mf",
-      "count": 1
-    },
-    {
-      "filePath": "3d/ping_case_back.stl",
-      "count": 1
     }
   ],
   "git": {
     "available": true,
     "branch": "main",
-    "headSummary": "2026-08-22 9007537 AI cache",
-    "statusSummary": "4 modifieds, 10 untrackeds",
-    "changedFileCount": 14,
+    "headSummary": "2026-08-22 1664d87 feat: add the 3d models and the STL that are ready for printing.",
+    "statusSummary": "3 modifieds, 2 untrackeds",
+    "changedFileCount": 5,
     "statusLines": [
-      "M README.md",
       "M graphify-out/WORKSPACE_MEMORY.md",
       "M workspace.json",
       "M workspacememory.md",
-      "?? 3d/ledHole-5.stl",
-      "?? 3d/ledHole.scad",
-      "?? 3d/ping_case-2.stl",
-      "?? 3d/ping_case-5mm-front.stl",
-      "?? 3d/ping_case-5mm-labels.stl",
-      "?? 3d/ping_case-5mm-leds.stl",
-      "?? 3d/ping_case.3mf",
-      "?? 3d/ping_case.stl",
-      "?? 3d/ping_case_back.3mf",
-      "?? 3d/ping_case_back.stl"
+      "?? micropython/config_mgr.py",
+      "?? programflow.mmd"
     ],
     "error": ""
   },
   "github": {
     "available": true,
-    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 9007537 by Vernon Muddle on 2026-08-22\n  AI cache\n\nURL: https://github.com/vmuddle/e-networkstatus"
+    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 1664d87 by Vernon Muddle on 2026-08-22\n  feat: add the 3d models and the STL that are ready for printing.\n\nURL: https://github.com/vmuddle/e-networkstatus"
   },
   "graphify": {
     "reportAvailable": false,
