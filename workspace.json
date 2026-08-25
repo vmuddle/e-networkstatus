@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T03:49:07.307Z",
-  "generatedAtEpochMs": 1787629747307,
+  "generatedAt": "2026-08-25T03:51:04.181Z",
+  "generatedAtEpochMs": 1787629864181,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -14,7 +14,7 @@
   "workspace": {
     "name": "e-networkstatus",
     "root": "c:\\github\\e-networkstatus",
-    "activeFile": null,
+    "activeFile": "README.md",
     "refreshReason": "tracked-change",
     "outputFiles": {
       "markdown": "graphify-out/WORKSPACE_MEMORY.md",
@@ -29,7 +29,7 @@
       "micropython/config_mgr.py",
       "micropython/uptime_kuma.py",
       "micropython/config/config.conf",
-      "3d/ping_case-5mm-labels.stl"
+      "doc/kuma-network.jpg"
     ],
     "stats": {
       "totalFiles": 23,
@@ -236,17 +236,25 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-25T03:49:04.870Z",
+    "lastActivityAt": "2026-08-25T03:51:02.512Z",
     "trackedChangeCount": 40,
     "trackedFileSnapshotCount": 20,
     "changeTypeCounts": {
-      "save": 29,
-      "create": 9,
+      "save": 30,
+      "create": 8,
       "delete": 0,
       "rename": 2
     }
   },
   "trackedSnapshots": [
+    {
+      "filePath": "README.md",
+      "updatedAt": 1787629862512,
+      "lineCount": 21,
+      "charCount": 1132,
+      "hash": "7dd8927ef21c",
+      "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small..."
+    },
     {
       "filePath": "programflow.mmd",
       "updatedAt": 1787629744870,
@@ -254,14 +262,6 @@
       "charCount": 1259,
       "hash": "3e97edbc1014",
       "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize..."
-    },
-    {
-      "filePath": "README.md",
-      "updatedAt": 1787629489789,
-      "lineCount": 19,
-      "charCount": 1007,
-      "hash": "b944b5ad8381",
-      "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small..."
     },
     {
       "filePath": "doc/kuma-network.jpg",
@@ -313,6 +313,38 @@
     }
   ],
   "recentChanges": [
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 17: inserted 3 lines.",
+      "recordedAt": "2026-08-25T03:51:02.512Z",
+      "recordedAtEpochMs": 1787629862512,
+      "before": {
+        "kind": "text",
+        "lineCount": 19,
+        "charCount": 1007,
+        "hash": "b944b5ad8381",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
+        "updatedAt": 1787629862512
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 21,
+        "charCount": 1132,
+        "hash": "7dd8927ef21c",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
+        "updatedAt": 1787629862512
+      },
+      "diff": {
+        "lineStart": 17,
+        "removedLines": 0,
+        "addedLines": 3,
+        "summary": "Line 17: inserted 3 lines.",
+        "beforeFragment": "",
+        "afterFragment": "config manager](micropython/configmgr.py) / - [github repo](https://github.com/Uthayamurthy/ConfigManager-Micropython) / - ["
+      }
+    },
     {
       "type": "save",
       "path": "programflow.mmd",
@@ -691,44 +723,12 @@
         "updatedAt": 1787628706239
       },
       "diff": null
-    },
-    {
-      "type": "save",
-      "path": ".gitignore",
-      "toPath": "",
-      "summary": "Line 1: replaced 1 line with 1 line.",
-      "recordedAt": "2026-08-25T03:31:24.721Z",
-      "recordedAtEpochMs": 1787628684721,
-      "before": {
-        "kind": "text",
-        "lineCount": 2,
-        "charCount": 30,
-        "hash": "1a1bea9c6fa0",
-        "preview": "micropython/config/kuma.conf",
-        "updatedAt": 1787628684721
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 2,
-        "charCount": 30,
-        "hash": "edd27e0126d7",
-        "preview": "micropython/config/none.conf",
-        "updatedAt": 1787628684721
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 1,
-        "addedLines": 1,
-        "summary": "Line 1: replaced 1 line with 1 line.",
-        "beforeFragment": "kuma",
-        "afterFragment": "none"
-      }
     }
   ],
   "hotFiles": [
     {
       "filePath": "README.md",
-      "count": 9
+      "count": 10
     },
     {
       "filePath": ".gitignore",
@@ -755,21 +755,18 @@
       "count": 2
     },
     {
-      "filePath": "3d/ping_case-5mm-labels.stl",
+      "filePath": "doc/kuma-network.jpg",
       "count": 1
     }
   ],
   "git": {
     "available": true,
     "branch": "main",
-    "headSummary": "2026-08-25 478a45f fix: update documentation",
-    "statusSummary": "4 modifieds",
-    "changedFileCount": 4,
+    "headSummary": "2026-08-25 98d584a fix: update programflow to refelct recent changes to codebase.",
+    "statusSummary": "1 modified",
+    "changedFileCount": 1,
     "statusLines": [
-      "M graphify-out/WORKSPACE_MEMORY.md",
-      "M programflow.mmd",
-      "M workspace.json",
-      "M workspacememory.md"
+      "M README.md"
     ],
     "error": ""
   },

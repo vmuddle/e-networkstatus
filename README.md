@@ -14,6 +14,8 @@ This is a LED dashboard to display nework status in the "zwift" cycling room, wi
 - raspi pico-w (we need wifi).
 ## software
 - [uptime_kuma.py](micropython/uptime_kuma.py)
+- [config manager](micropython/configmgr.py) 
+  - [github repo](https://github.com/Uthayamurthy/ConfigManager-Micropython)
 - [uptime kuma](https://uptimekuma.co/)
 ## configuration
 - [config](micropython/config/config.conf)
