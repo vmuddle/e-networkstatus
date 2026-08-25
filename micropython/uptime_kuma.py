@@ -2,56 +2,69 @@ import network, time
 import urequests
 from machine import Pin
 
+from configmgr import *
+myconfigfile = ConfigFile('config.conf')
+myconfigfile.read()
+myconfig = myconfigfile.config
+print(myconfig)
+
+ports=myconfig['ports']
+
+print(type(ports))
+for portname in ports:
+    print(portname)
+
+
 # This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the monitors or groups you want to check the status of. Make sure to replace the Wi-Fi credentials and the base URL with your actual values.
 
-portLookup = { "GP1": 2 ,  # Internet
-               "GP2": 4 ,  # Garage
-               "GP3": 8,   # Google Router
-               "GP4": 29,   # switch A
-               "GP5": 30,   # switch B
-               "GP6": 17,   # apple_tv_a_wifi
-               "GP7": 16,   # apple_tv_a_lan
-               "GP8": 12,   # bike_tv_a_wifi
-               "GP9": 15,   # bike_tv_a_lan
-               "GP10": 18,  # trainer_a_wifi
-               "GP11": 19,  # trainer_a_lan
-               "GP12": 24,  # apple_tv_b_wifi
-               "GP13": 21,  # apple_tv_b_lan
-               "GP14": 11,  # bike_tv_b_wifi
-               "GP15": 20,  # bike_tv_b_lan
-               "GP16": 23,  # trainer_b_wifi
-               "GP17": 22,  # trainer_b_lan
-               }
+portLookup = ports
 portSetup = {}
+lastStatus = {}
 for portName in portLookup.keys():
     ledPort = Pin(portName, Pin.OUT)
     portSetup[portName] = ledPort
+    lastStatus[portName] = False
     
 powerLed = Pin("GP0", Pin.OUT)
 powerLed.on()
 
 def buildUrl(id=2):
-    baseUrl="http://192.168.87.239:3001/api/badge/" # replace with your actual Uptime Kuma server URL, if memory serves me correctly, this is the url of a "GROUP" badge, which will show the status of all monitors in that group. If you want to check a specific monitor, you can use the monitor's ID instead of the group ID.
+    baseUrl=myconfig['kuma']['base_url']+"/api/badge/" # replace with your actual Uptime Kuma server URL, if memory serves me correctly, this is the url of a "GROUP" badge, which will show the status of all monitors in that group. If you want to check a specific monitor, you can use the monitor's ID instead of the group ID.
     endUrl="/status"
     return baseUrl+str(id)+endUrl
+#    return myconfig['kuma']['base_url']+'/dashboard/'+str(id)
+
 
 def getStatus(id=2):
     fullUrl=buildUrl(id)
     print("URL="+fullUrl)
     response = urequests.get(fullUrl)
     #print(response.text)
-    if "Up" in response.text:
+    if "Up</span>" in response.text:
         response.close()
+        print('ID '+str(id)+' is UP')
         return True
     else:
-        response.close()
-        return False
+        if "Up" in response.text:
+            print(response.text)
+            response.close()
+            print('ID '+str(id)+' is UP kind of')
+            return True
+        else:
+            response.close()
+            return False
     
     
 
 def start_network():
-    ssid = 'wifi_ssid' # replace with your actual Wi-Fi credentials
-    password = 'wifi_password' # replace with your actual Wi-Fi credentials
+    print("Starting network...")
+    print("Connecting to Wi-Fi...")
+    
+    ssid = myconfig['wifi']['ssid'] # replace with your actual Wi-Fi credentials
+    password = myconfig['wifi']['password'] # replace with your actual Wi-Fi credentials
+    print("SSID:"+ssid)
+    print("SSID: {}".format(ssid))
+    print("Password: {}".format(password))
 
     wlan = network.WLAN(network.STA_IF)
     print(wlan.config("mac"))
@@ -65,8 +78,9 @@ def start_network():
         max_wait -= 1
         print('waiting for connection...')
         time.sleep(1)
-
+    print('Done waiting for connection')
     if wlan.status() != 3:
+        print('Wlan.status'.format(wlan.status()))
         raise RuntimeError('network connection failed')
     else:
         print('connected')
@@ -88,14 +102,31 @@ def checksum(data):
 
 start_network()
 #_thread.start_new_thread(core2, ())
+powerLedStatus=False
 while True:
     for portName, statusId in portLookup.items():
         print(portName+":"+str(statusId))
-        powerLed.off()
-        status=getStatus(statusId)
-        if status:
+        if(lastStatus[portName]):
+            portSetup[portName].off()
+        else:
+            portSetup[portName].on()
+        time.sleep(0.1)
+        if(lastStatus[portName]):
             portSetup[portName].on()
         else:
             portSetup[portName].off()
-        powerLed.on()
-    time.sleep(10)
+        
+        status=getStatus(statusId)
+        lastStatus[portName]=status
+        if(lastStatus[portName]):
+            portSetup[portName].on()
+        else:
+            portSetup[portName].off()
+        
+    for counter in range(20):
+        time.sleep(0.2)
+        powerLedStatus= not powerLedStatus
+        if powerLedStatus:
+            powerLed.on()
+        else:
+            powerLed.off()
