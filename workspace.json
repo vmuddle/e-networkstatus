@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24T22:31:47.242Z",
-  "generatedAtEpochMs": 1787610707242,
+  "generatedAt": "2026-08-25T03:40:09.652Z",
+  "generatedAtEpochMs": 1787629209652,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -14,7 +14,7 @@
   "workspace": {
     "name": "e-networkstatus",
     "root": "c:\\github\\e-networkstatus",
-    "activeFile": "programflow.mmd",
+    "activeFile": "README.md",
     "refreshReason": "tracked-change",
     "outputFiles": {
       "markdown": "graphify-out/WORKSPACE_MEMORY.md",
@@ -22,17 +22,17 @@
       "structuredManifest": "workspace.json"
     },
     "suggestedStartingPoints": [
-      "programflow.mmd",
-      "micropython/uptime_kuma.py",
       "README.md",
-      "3d/ping_case.scad",
+      ".gitignore",
+      "micropython/config/kuma.conf",
       "micropython/config_mgr.py",
-      "3d",
-      "3d/ledHole-5.stl",
-      "3d/ledHole.scad"
+      "micropython/uptime_kuma.py",
+      "micropython/config/config.conf",
+      "programflow.mmd",
+      "3d/ping_case_back.3mf"
     ],
     "stats": {
-      "totalFiles": 19,
+      "totalFiles": 20,
       "topLevelAreas": [
         {
           "name": "3d",
@@ -44,7 +44,11 @@
         },
         {
           "name": "micropython",
-          "count": 4
+          "count": 3
+        },
+        {
+          "name": "doc",
+          "count": 2
         }
       ],
       "primaryFileTypes": [
@@ -57,11 +61,11 @@
           "count": 2
         },
         {
-          "name": ".md",
+          "name": ".jpg",
           "count": 2
         },
         {
-          "name": ".py",
+          "name": ".md",
           "count": 2
         },
         {
@@ -152,9 +156,15 @@
           "isKeyFile": false
         },
         {
-          "path": "micropython/config_mgr.py",
-          "topLevelArea": "micropython",
-          "extension": ".py",
+          "path": "doc/kuma-network-small.jpg",
+          "topLevelArea": "doc",
+          "extension": ".jpg",
+          "isKeyFile": false
+        },
+        {
+          "path": "doc/kuma-network.jpg",
+          "topLevelArea": "doc",
+          "extension": ".jpg",
           "isKeyFile": false
         },
         {
@@ -207,24 +217,64 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-24T22:31:32.725Z",
-    "trackedChangeCount": 29,
-    "trackedFileSnapshotCount": 17,
+    "lastActivityAt": "2026-08-25T03:40:07.988Z",
+    "trackedChangeCount": 40,
+    "trackedFileSnapshotCount": 20,
     "changeTypeCounts": {
-      "save": 8,
-      "create": 20,
+      "save": 24,
+      "create": 14,
       "delete": 0,
-      "rename": 1
+      "rename": 2
     }
   },
   "trackedSnapshots": [
     {
-      "filePath": "micropython/config_mgr.py",
-      "updatedAt": 1787610686182.7422,
+      "filePath": "README.md",
+      "updatedAt": 1787629207988,
+      "lineCount": 18,
+      "charCount": 791,
+      "hash": "4c6d831a2be3",
+      "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small..."
+    },
+    {
+      "filePath": "doc/kuma-network.jpg",
+      "updatedAt": 1787628911495.5046,
       "lineCount": 0,
       "charCount": 0,
-      "hash": "empty",
-      "preview": ""
+      "hash": "",
+      "preview": "Binary or large file; content preview omitted."
+    },
+    {
+      "filePath": "micropython/config/config.conf",
+      "updatedAt": 1787628710926,
+      "lineCount": 26,
+      "charCount": 536,
+      "hash": "f02a3577c5d0",
+      "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_passwords / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /..."
+    },
+    {
+      "filePath": ".gitignore",
+      "updatedAt": 1787628706239,
+      "lineCount": 2,
+      "charCount": 27,
+      "hash": "d284529f6fea",
+      "preview": "micropython/config/*.conf"
+    },
+    {
+      "filePath": "micropython/uptime_kuma.py",
+      "updatedAt": 1787611651931,
+      "lineCount": 115,
+      "charCount": 3794,
+      "hash": "8c456164537f",
+      "preview": "import network, time / import urequests / from machine import Pin / from configmgr import * / myconfigfile = ConfigFile('config.conf') / myconfigfile.read() / myconfig = myconfigfile.config / print(myconfig) / # This..."
+    },
+    {
+      "filePath": "micropython/configmgr.py",
+      "updatedAt": 1787610786324.9045,
+      "lineCount": 93,
+      "charCount": 3591,
+      "hash": "7f3f2617f9d4",
+      "preview": "import re / class ConfigFile: / def __init__(self, filename): / self.filename = 'config/{}'.format(filename) / self.sections = [] / self.config = {} / def read(self): / configfile = open(self.filename) / sectionre = r..."
     },
     {
       "filePath": "programflow.mmd",
@@ -235,104 +285,443 @@
       "preview": ""
     },
     {
-      "filePath": "README.md",
-      "updatedAt": 1787376102021,
-      "lineCount": 15,
-      "charCount": 676,
-      "hash": "34bae5de81fc",
-      "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / It uses \"uptime kuma\" for the actual hea..."
-    },
-    {
-      "filePath": "micropython/uptime_kuma.py",
-      "updatedAt": 1787375344363,
-      "lineCount": 101,
-      "charCount": 3439,
-      "hash": "4d5f25ac0f51",
-      "preview": "import network, time / import urequests / from machine import Pin / # This maps the GPIO pins to the GROUP IDs in Uptime Kuma. You can change the IDs to match your own Uptime Kuma setup. The IDs correspond to the moni..."
-    },
-    {
       "filePath": "3d/ping_case_back.3mf",
       "updatedAt": 1734838002119.0916,
       "lineCount": 132,
       "charCount": 31704,
       "hash": "6534dea88bb1",
       "preview": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000Uk�Y\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml��Kj�0\u0010��9�ж�r[(��΢�\u0013�\u0007\u0010��\u0016�FB\u001a\u0007��\u001dŅ�!�r�?>��\u001eW��\u0019R�\u0001;y_7R\u0000�0X�:�y����?���\bY�\u0017s'g���T63x��\u0010\u0001Y\u0019C��L���|�\t�C�<)\u0013�\u0000���!��h�`ԋ#񾲰�\u0013�,��f-�N�\u0018�5�XWg\u001cv��Qs��ɳ���R]a�0��\u0001�ŏ�׸..."
-    },
-    {
-      "filePath": "3d/ping_case_back.stl",
-      "updatedAt": 1734837673406.295,
-      "lineCount": 2,
-      "charCount": 3080,
-      "hash": "1cae5e72eab5",
-      "preview": "OpenSCAD Model / \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000<\u0000\u0000\u0000\u0000\u0000��\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000033A�33A���L?33A�33A����@33A�33AB���@\u0000\u0000\u0000\u0000��\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000033A�33AB��L?33A�33A���L?33A�33AB���@\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�?33A�33AB���@33A�33A..."
-    },
-    {
-      "filePath": "3d/ping_case.scad",
-      "updatedAt": 1734837654306.4192,
-      "lineCount": 333,
-      "charCount": 11809,
-      "hash": "ed0e7cb55be7",
-      "preview": "// Case for raspi w - with ping to website ability / $fn=360; / labels_only=0; / wall_thickness=1.6; / case_width=100; / case_length=100; / case_depth=20; / pcb_width=22; / pcb_length=53; / pcb_depth=10; / pcb_hole_di..."
-    },
-    {
-      "filePath": "3d/ping_case.3mf",
-      "updatedAt": 1731731573909.3264,
-      "lineCount": 0,
-      "charCount": 0,
-      "hash": "",
-      "preview": "Binary or large file; content preview omitted."
     }
   ],
   "recentChanges": [
     {
       "type": "save",
-      "path": "micropython/config_mgr.py",
+      "path": "README.md",
       "toPath": "",
-      "summary": "",
-      "recordedAt": "2026-08-24T22:31:32.725Z",
-      "recordedAtEpochMs": 1787610692725,
-      "before": null,
-      "after": null,
-      "diff": null
+      "summary": "Line 1: replaced 16 lines with 18 lines.",
+      "recordedAt": "2026-08-25T03:40:07.988Z",
+      "recordedAtEpochMs": 1787629207988,
+      "before": {
+        "kind": "text",
+        "lineCount": 16,
+        "charCount": 1460,
+        "hash": "04c9812054eb",
+        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
+        "updatedAt": 1787629207988
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 18,
+        "charCount": 791,
+        "hash": "4c6d831a2be3",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
+        "updatedAt": 1787629207988
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 16,
+        "addedLines": 18,
+        "summary": "Line 1: replaced 16 lines with 18 lines.",
+        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
+        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 1: replaced 16 lines with 16 lines.",
+      "recordedAt": "2026-08-25T03:38:52.128Z",
+      "recordedAtEpochMs": 1787629132128,
+      "before": {
+        "kind": "text",
+        "lineCount": 16,
+        "charCount": 1448,
+        "hash": "f9c8884f1dba",
+        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
+        "updatedAt": 1787629132128
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 16,
+        "charCount": 729,
+        "hash": "63cbc3dd1cdf",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
+        "updatedAt": 1787629132128
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 16,
+        "addedLines": 16,
+        "summary": "Line 1: replaced 16 lines with 16 lines.",
+        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
+        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 1: replaced 16 lines with 16 lines.",
+      "recordedAt": "2026-08-25T03:38:38.757Z",
+      "recordedAtEpochMs": 1787629118757,
+      "before": {
+        "kind": "text",
+        "lineCount": 16,
+        "charCount": 1444,
+        "hash": "c99bc7f2e84d",
+        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
+        "updatedAt": 1787629118757
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 16,
+        "charCount": 723,
+        "hash": "c2ae1864a308",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
+        "updatedAt": 1787629118757
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 16,
+        "addedLines": 16,
+        "summary": "Line 1: replaced 16 lines with 16 lines.",
+        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
+        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 1: replaced 16 lines with 16 lines.",
+      "recordedAt": "2026-08-25T03:38:14.006Z",
+      "recordedAtEpochMs": 1787629094006,
+      "before": {
+        "kind": "text",
+        "lineCount": 16,
+        "charCount": 1432,
+        "hash": "44400be277c4",
+        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
+        "updatedAt": 1787629094006
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 16,
+        "charCount": 721,
+        "hash": "ff8e01e0f9d4",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / ![Kuma monitor](doc/kuma-network-small.j...",
+        "updatedAt": 1787629094006
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 16,
+        "addedLines": 16,
+        "summary": "Line 1: replaced 16 lines with 16 lines.",
+        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
+        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 1: replaced 15 lines with 16 lines.",
+      "recordedAt": "2026-08-25T03:36:11.371Z",
+      "recordedAtEpochMs": 1787628971371,
+      "before": {
+        "kind": "text",
+        "lineCount": 15,
+        "charCount": 1354,
+        "hash": "4f2c43f0331a",
+        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
+        "updatedAt": 1787628971371
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 16,
+        "charCount": 715,
+        "hash": "506188ead0c3",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / ![Kuma monitor](doc/kuma-network.jpg) /...",
+        "updatedAt": 1787628971371
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 15,
+        "addedLines": 16,
+        "summary": "Line 1: replaced 15 lines with 16 lines.",
+        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
+        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
+      }
     },
     {
       "type": "create",
-      "path": "micropython/config_mgr.py",
+      "path": "doc/kuma-network.jpg",
       "toPath": "",
       "summary": "Created file.",
-      "recordedAt": "2026-08-24T22:31:26.190Z",
-      "recordedAtEpochMs": 1787610686190,
+      "recordedAt": "2026-08-25T03:35:41.067Z",
+      "recordedAtEpochMs": 1787628941067,
       "before": null,
       "after": {
-        "kind": "text",
-        "lineCount": 0,
-        "charCount": 0,
-        "hash": "empty",
-        "preview": "",
-        "updatedAt": 1787610686182.7422,
-        "extension": ".py",
-        "sizeBytes": 0
+        "kind": "file",
+        "extension": ".jpg",
+        "sizeBytes": 1685638,
+        "preview": "Binary or large file; content preview omitted.",
+        "updatedAt": 1787628911495.5046
       },
       "diff": null
     },
     {
       "type": "save",
-      "path": "programflow.mmd",
+      "path": "micropython/config/config.conf",
       "toPath": "",
-      "summary": "",
-      "recordedAt": "2026-08-23T23:57:52.842Z",
-      "recordedAtEpochMs": 1787529472842,
-      "before": null,
-      "after": null,
+      "summary": "Line 3: inserted 1 line.",
+      "recordedAt": "2026-08-25T03:31:50.926Z",
+      "recordedAtEpochMs": 1787628710926,
+      "before": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 535,
+        "hash": "d73b30f9df91",
+        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
+        "updatedAt": 1787628710926
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 536,
+        "hash": "f02a3577c5d0",
+        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_passwords / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
+        "updatedAt": 1787628710926
+      },
+      "diff": {
+        "lineStart": 3,
+        "removedLines": 0,
+        "addedLines": 1,
+        "summary": "Line 3: inserted 1 line.",
+        "beforeFragment": "",
+        "afterFragment": "s"
+      }
+    },
+    {
+      "type": "save",
+      "path": ".gitignore",
+      "toPath": "",
+      "summary": "Saved without a textual diff.",
+      "recordedAt": "2026-08-25T03:31:46.239Z",
+      "recordedAtEpochMs": 1787628706239,
+      "before": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 27,
+        "hash": "d284529f6fea",
+        "preview": "micropython/config/*.conf",
+        "updatedAt": 1787628706239
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 27,
+        "hash": "d284529f6fea",
+        "preview": "micropython/config/*.conf",
+        "updatedAt": 1787628706239
+      },
       "diff": null
     },
     {
+      "type": "save",
+      "path": ".gitignore",
+      "toPath": "",
+      "summary": "Line 1: replaced 1 line with 1 line.",
+      "recordedAt": "2026-08-25T03:31:24.721Z",
+      "recordedAtEpochMs": 1787628684721,
+      "before": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 30,
+        "hash": "1a1bea9c6fa0",
+        "preview": "micropython/config/kuma.conf",
+        "updatedAt": 1787628684721
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 30,
+        "hash": "edd27e0126d7",
+        "preview": "micropython/config/none.conf",
+        "updatedAt": 1787628684721
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 1,
+        "addedLines": 1,
+        "summary": "Line 1: replaced 1 line with 1 line.",
+        "beforeFragment": "kuma",
+        "afterFragment": "none"
+      }
+    },
+    {
+      "type": "save",
+      "path": ".gitignore",
+      "toPath": "",
+      "summary": "Line 1: replaced 1 line with 1 line.",
+      "recordedAt": "2026-08-25T03:31:13.213Z",
+      "recordedAtEpochMs": 1787628673213,
+      "before": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 27,
+        "hash": "d284529f6fea",
+        "preview": "micropython/config/*.conf",
+        "updatedAt": 1787628673213
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 30,
+        "hash": "1a1bea9c6fa0",
+        "preview": "micropython/config/kuma.conf",
+        "updatedAt": 1787628673213
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 1,
+        "addedLines": 1,
+        "summary": "Line 1: replaced 1 line with 1 line.",
+        "beforeFragment": "*",
+        "afterFragment": "kuma"
+      }
+    },
+    {
+      "type": "rename",
+      "path": "micropython/config/kuma.conf",
+      "toPath": "micropython/config/config.conf",
+      "summary": "Renamed file.",
+      "recordedAt": "2026-08-25T03:30:51.139Z",
+      "recordedAtEpochMs": 1787628651139,
+      "before": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 535,
+        "hash": "d73b30f9df91",
+        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
+        "updatedAt": 1787628592032
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 535,
+        "hash": "d73b30f9df91",
+        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
+        "updatedAt": 1787628592034.05,
+        "extension": ".conf",
+        "sizeBytes": 535
+      },
+      "diff": null
+    },
+    {
+      "type": "save",
+      "path": ".gitignore",
+      "toPath": "",
+      "summary": "Line 1: replaced 1 line with 1 line.",
+      "recordedAt": "2026-08-25T03:30:29.349Z",
+      "recordedAtEpochMs": 1787628629349,
+      "before": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 30,
+        "hash": "1a1bea9c6fa0",
+        "preview": "micropython/config/kuma.conf",
+        "updatedAt": 1787628629349
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 27,
+        "hash": "d284529f6fea",
+        "preview": "micropython/config/*.conf",
+        "updatedAt": 1787628629349
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 1,
+        "addedLines": 1,
+        "summary": "Line 1: replaced 1 line with 1 line.",
+        "beforeFragment": "kuma",
+        "afterFragment": "*"
+      }
+    },
+    {
+      "type": "save",
+      "path": "micropython/config/kuma.conf",
+      "toPath": "",
+      "summary": "Line 3: removed 1 line.",
+      "recordedAt": "2026-08-25T03:29:52.032Z",
+      "recordedAtEpochMs": 1787628592032,
+      "before": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 536,
+        "hash": "f02a3577c5d0",
+        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_passwords / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
+        "updatedAt": 1787628592032
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 535,
+        "hash": "d73b30f9df91",
+        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
+        "updatedAt": 1787628592032
+      },
+      "diff": {
+        "lineStart": 3,
+        "removedLines": 1,
+        "addedLines": 0,
+        "summary": "Line 3: removed 1 line.",
+        "beforeFragment": "s",
+        "afterFragment": ""
+      }
+    },
+    {
+      "type": "save",
+      "path": ".gitignore",
+      "toPath": "",
+      "summary": "Line 1: inserted 2 lines.",
+      "recordedAt": "2026-08-25T03:29:39.619Z",
+      "recordedAtEpochMs": 1787628579619,
+      "before": {
+        "kind": "text",
+        "lineCount": 0,
+        "charCount": 0,
+        "hash": "empty",
+        "preview": "",
+        "updatedAt": 1787628579619
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 30,
+        "hash": "1a1bea9c6fa0",
+        "preview": "micropython/config/kuma.conf",
+        "updatedAt": 1787628579619
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 0,
+        "addedLines": 2,
+        "summary": "Line 1: inserted 2 lines.",
+        "beforeFragment": "",
+        "afterFragment": "micropython/config/kuma.conf"
+      }
+    },
+    {
       "type": "create",
-      "path": "programflow.mmd",
+      "path": ".gitignore",
       "toPath": "",
       "summary": "Created file.",
-      "recordedAt": "2026-08-23T23:57:52.814Z",
-      "recordedAtEpochMs": 1787529472814,
+      "recordedAt": "2026-08-25T03:29:39.605Z",
+      "recordedAtEpochMs": 1787628579605,
       "before": null,
       "after": {
         "kind": "text",
@@ -340,227 +729,36 @@
         "charCount": 0,
         "hash": "empty",
         "preview": "",
-        "updatedAt": 1787529472810.7144,
-        "extension": ".mmd",
+        "updatedAt": 1787628579600.8586,
+        "extension": "[no extension]",
         "sizeBytes": 0
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case-5mm-labels.stl",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.771Z",
-      "recordedAtEpochMs": 1787376178771,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".stl",
-        "sizeBytes": 10104884,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1731726741590.6282
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case-5mm-front.stl",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.768Z",
-      "recordedAtEpochMs": 1787376178768,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".stl",
-        "sizeBytes": 49463895,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1731728570938.5215
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case-2.stl",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.766Z",
-      "recordedAtEpochMs": 1787376178766,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".stl",
-        "sizeBytes": 7245497,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1731284293689.0356
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case_back.stl",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.765Z",
-      "recordedAtEpochMs": 1787376178765,
-      "before": null,
-      "after": {
-        "kind": "text",
-        "lineCount": 2,
-        "charCount": 3080,
-        "hash": "1cae5e72eab5",
-        "preview": "OpenSCAD Model / \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000<\u0000\u0000\u0000\u0000\u0000��\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000033A�33A���L?33A�33A����@33A�33AB���@\u0000\u0000\u0000\u0000��\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000033A�33AB��L?33A�33A���L?33A�33AB���@\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�?33A�33AB���@33A�33A...",
-        "updatedAt": 1734837673406.295,
-        "extension": ".stl",
-        "sizeBytes": 3084
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case_back.3mf",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.748Z",
-      "recordedAtEpochMs": 1787376178748,
-      "before": null,
-      "after": {
-        "kind": "text",
-        "lineCount": 132,
-        "charCount": 31704,
-        "hash": "6534dea88bb1",
-        "preview": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000Uk�Y\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml��Kj�0\u0010��9�ж�r[(��΢�\u0013�\u0007\u0010��\u0016�FB\u001a\u0007��\u001dŅ�!�r�?>��\u001eW��\u0019R�\u0001;y_7R\u0000�0X�:�y����?���\bY�\u0017s'g���T63x��\u0010\u0001Y\u0019C��L���|�\t�C�<)\u0013�\u0000���!��h�`ԋ#񾲰�\u0013�,��f-�N�\u0018�5�XWg\u001cv��Qs��ɳ���R]a�0��\u0001�ŏ�׸...",
-        "updatedAt": 1734838002119.0916,
-        "extension": ".3mf",
-        "sizeBytes": 32992
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case.stl",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.726Z",
-      "recordedAtEpochMs": 1787376178726,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".stl",
-        "sizeBytes": 11431782,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1731061941067.7886
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case.scad",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.725Z",
-      "recordedAtEpochMs": 1787376178725,
-      "before": null,
-      "after": {
-        "kind": "text",
-        "lineCount": 333,
-        "charCount": 11809,
-        "hash": "ed0e7cb55be7",
-        "preview": "// Case for raspi w - with ping to website ability / $fn=360; / labels_only=0; / wall_thickness=1.6; / case_width=100; / case_length=100; / case_depth=20; / pcb_width=22; / pcb_length=53; / pcb_depth=10; / pcb_hole_di...",
-        "updatedAt": 1734837654306.4192,
-        "extension": ".scad",
-        "sizeBytes": 11809
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case.3mf",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.695Z",
-      "recordedAtEpochMs": 1787376178695,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".3mf",
-        "sizeBytes": 11345788,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1731731573909.3264
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ledHole-5.stl",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.688Z",
-      "recordedAtEpochMs": 1787376178688,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".stl",
-        "sizeBytes": 1870765,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1731397963501.5298
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ledHole.scad",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.686Z",
-      "recordedAtEpochMs": 1787376178686,
-      "before": null,
-      "after": {
-        "kind": "text",
-        "lineCount": 39,
-        "charCount": 762,
-        "hash": "b6f55257d5f0",
-        "preview": "//led measure / $fn=360; / largeLedDiameter_A=5.1; / largeLedDiameter_B=5.3; / largeLedDiameter_C=5.5; / difference() { / translate([0,0,1]) / cube([30,50,2], true); / translate([10,-20,0]) { / cylinder(h=2, d=largeLe...",
-        "updatedAt": 1731397909300.919,
-        "extension": ".scad",
-        "sizeBytes": 762
-      },
-      "diff": null
-    },
-    {
-      "type": "create",
-      "path": "3d/ping_case-5mm-leds.stl",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-22T05:22:58.658Z",
-      "recordedAtEpochMs": 1787376178658,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".stl",
-        "sizeBytes": 861684,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1731726712384.1194
       },
       "diff": null
     }
   ],
   "hotFiles": [
     {
+      "filePath": ".gitignore",
+      "count": 6
+    },
+    {
+      "filePath": "micropython/config/kuma.conf",
+      "count": 6
+    },
+    {
+      "filePath": "README.md",
+      "count": 6
+    },
+    {
+      "filePath": "micropython/config_mgr.py",
+      "count": 4
+    },
+    {
       "filePath": "micropython/uptime_kuma.py",
       "count": 4
     },
     {
-      "filePath": "README.md",
-      "count": 3
-    },
-    {
-      "filePath": "3d/ping_case.scad",
-      "count": 2
-    },
-    {
-      "filePath": "micropython/config_mgr.py",
+      "filePath": "micropython/config/config.conf",
       "count": 2
     },
     {
@@ -568,36 +766,28 @@
       "count": 2
     },
     {
-      "filePath": "3d",
-      "count": 1
-    },
-    {
-      "filePath": "3d/ledHole-5.stl",
-      "count": 1
-    },
-    {
-      "filePath": "3d/ledHole.scad",
+      "filePath": "3d/ping_case_back.3mf",
       "count": 1
     }
   ],
   "git": {
     "available": true,
     "branch": "main",
-    "headSummary": "2026-08-22 1664d87 feat: add the 3d models and the STL that are ready for printing.",
-    "statusSummary": "3 modifieds, 2 untrackeds",
+    "headSummary": "2026-08-25 372fad9 working space.",
+    "statusSummary": "4 modifieds, 1 untracked",
     "changedFileCount": 5,
     "statusLines": [
+      "M README.md",
       "M graphify-out/WORKSPACE_MEMORY.md",
       "M workspace.json",
       "M workspacememory.md",
-      "?? micropython/config_mgr.py",
-      "?? programflow.mmd"
+      "?? doc/"
     ],
     "error": ""
   },
   "github": {
     "available": true,
-    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 1664d87 by Vernon Muddle on 2026-08-22\n  feat: add the 3d models and the STL that are ready for printing.\n\nURL: https://github.com/vmuddle/e-networkstatus"
+    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 46d2eac by vmuddle on 2026-08-25\n  Merge pull request #1 from vmuddle/feat/config_manager Feat/config manager\n\nURL: https://github.com/vmuddle/e-networkstatus"
   },
   "graphify": {
     "reportAvailable": false,
