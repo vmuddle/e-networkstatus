@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T03:31:26.399Z",
-  "generatedAtEpochMs": 1787628686399,
+  "generatedAt": "2026-08-25T03:31:52.608Z",
+  "generatedAtEpochMs": 1787628712608,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -14,7 +14,7 @@
   "workspace": {
     "name": "e-networkstatus",
     "root": "c:\\github\\e-networkstatus",
-    "activeFile": ".gitignore",
+    "activeFile": "micropython/config/config.conf",
     "refreshReason": "tracked-change",
     "outputFiles": {
       "markdown": "graphify-out/WORKSPACE_MEMORY.md",
@@ -22,14 +22,14 @@
       "structuredManifest": "workspace.json"
     },
     "suggestedStartingPoints": [
+      "micropython/config/config.conf",
       ".gitignore",
       "micropython/config/kuma.conf",
-      "micropython/uptime_kuma.py",
       "micropython/config_mgr.py",
+      "micropython/uptime_kuma.py",
       "README.md",
       "programflow.mmd",
-      "3d/ledHole-5.stl",
-      "3d/ledHole.scad"
+      "3d/ledHole-5.stl"
     ],
     "stats": {
       "totalFiles": 21,
@@ -220,7 +220,7 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-25T03:31:24.721Z",
+    "lastActivityAt": "2026-08-25T03:31:50.926Z",
     "trackedChangeCount": 40,
     "trackedFileSnapshotCount": 19,
     "changeTypeCounts": {
@@ -232,20 +232,20 @@
   },
   "trackedSnapshots": [
     {
-      "filePath": ".gitignore",
-      "updatedAt": 1787628684721,
-      "lineCount": 2,
-      "charCount": 30,
-      "hash": "edd27e0126d7",
-      "preview": "micropython/config/none.conf"
+      "filePath": "micropython/config/config.conf",
+      "updatedAt": 1787628710926,
+      "lineCount": 26,
+      "charCount": 536,
+      "hash": "f02a3577c5d0",
+      "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_passwords / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /..."
     },
     {
-      "filePath": "micropython/config/config.conf",
-      "updatedAt": 1787628592034.05,
-      "lineCount": 26,
-      "charCount": 535,
-      "hash": "d73b30f9df91",
-      "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /..."
+      "filePath": ".gitignore",
+      "updatedAt": 1787628706239,
+      "lineCount": 2,
+      "charCount": 27,
+      "hash": "d284529f6fea",
+      "preview": "micropython/config/*.conf"
     },
     {
       "filePath": "README.md",
@@ -297,6 +297,63 @@
     }
   ],
   "recentChanges": [
+    {
+      "type": "save",
+      "path": "micropython/config/config.conf",
+      "toPath": "",
+      "summary": "Line 3: inserted 1 line.",
+      "recordedAt": "2026-08-25T03:31:50.926Z",
+      "recordedAtEpochMs": 1787628710926,
+      "before": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 535,
+        "hash": "d73b30f9df91",
+        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
+        "updatedAt": 1787628710926
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 536,
+        "hash": "f02a3577c5d0",
+        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_passwords / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
+        "updatedAt": 1787628710926
+      },
+      "diff": {
+        "lineStart": 3,
+        "removedLines": 0,
+        "addedLines": 1,
+        "summary": "Line 3: inserted 1 line.",
+        "beforeFragment": "",
+        "afterFragment": "s"
+      }
+    },
+    {
+      "type": "save",
+      "path": ".gitignore",
+      "toPath": "",
+      "summary": "Saved without a textual diff.",
+      "recordedAt": "2026-08-25T03:31:46.239Z",
+      "recordedAtEpochMs": 1787628706239,
+      "before": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 27,
+        "hash": "d284529f6fea",
+        "preview": "micropython/config/*.conf",
+        "updatedAt": 1787628706239
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 2,
+        "charCount": 27,
+        "hash": "d284529f6fea",
+        "preview": "micropython/config/*.conf",
+        "updatedAt": 1787628706239
+      },
+      "diff": null
+    },
     {
       "type": "save",
       "path": ".gitignore",
@@ -674,92 +731,32 @@
       "before": null,
       "after": null,
       "diff": null
-    },
-    {
-      "type": "save",
-      "path": "micropython/config/kuma.conf",
-      "toPath": "",
-      "summary": "Line 4: inserted 2 lines.",
-      "recordedAt": "2026-08-24T22:37:17.860Z",
-      "recordedAtEpochMs": 1787611037860,
-      "before": {
-        "kind": "text",
-        "lineCount": 24,
-        "charCount": 622,
-        "hash": "88e2559fdd4a",
-        "preview": "[wifi] / ssid = your_ssid / password = your_password / [kuma] / base_url = http://your-uptime-kuma-url / port_GP1 = 2 # Internet / port_GP2 = 4 # Garage / port_GP3 = 8 # Google Router / port_GP4 = 29 # switch A / port...",
-        "updatedAt": 1787611037860
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 25,
-        "charCount": 624,
-        "hash": "17e6603297ae",
-        "preview": "[wifi] / ssid = your_ssid / password = your_password / [kuma] / base_url = http://your-uptime-kuma-url / port_GP1 = 2 # Internet / port_GP2 = 4 # Garage / port_GP3 = 8 # Google Router / port_GP4 = 29 # switch A / port...",
-        "updatedAt": 1787611037860
-      },
-      "diff": {
-        "lineStart": 4,
-        "removedLines": 0,
-        "addedLines": 2,
-        "summary": "Line 4: inserted 2 lines.",
-        "beforeFragment": "",
-        "afterFragment": ""
-      }
-    },
-    {
-      "type": "save",
-      "path": "micropython/config/kuma.conf",
-      "toPath": "",
-      "summary": "Line 1: inserted 24 lines.",
-      "recordedAt": "2026-08-24T22:37:13.962Z",
-      "recordedAtEpochMs": 1787611033962,
-      "before": {
-        "kind": "text",
-        "lineCount": 0,
-        "charCount": 0,
-        "hash": "empty",
-        "preview": "",
-        "updatedAt": 1787611033962
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 24,
-        "charCount": 622,
-        "hash": "88e2559fdd4a",
-        "preview": "[wifi] / ssid = your_ssid / password = your_password / [kuma] / base_url = http://your-uptime-kuma-url / port_GP1 = 2 # Internet / port_GP2 = 4 # Garage / port_GP3 = 8 # Google Router / port_GP4 = 29 # switch A / port...",
-        "updatedAt": 1787611033962
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 0,
-        "addedLines": 24,
-        "summary": "Line 1: inserted 24 lines.",
-        "beforeFragment": "",
-        "afterFragment": "[wifi] / ssid = your_ssid / password = your_password / [kuma] / base_url = http://your-uptime-kuma-url / port_GP1 = 2 # Internet / port_GP2 = 4 # Garage / port_GP3 = 8 # Google..."
-      }
     }
   ],
   "hotFiles": [
     {
-      "filePath": "micropython/config/kuma.conf",
+      "filePath": ".gitignore",
       "count": 6
     },
     {
-      "filePath": ".gitignore",
-      "count": 5
-    },
-    {
-      "filePath": "micropython/uptime_kuma.py",
-      "count": 5
+      "filePath": "micropython/config/kuma.conf",
+      "count": 6
     },
     {
       "filePath": "micropython/config_mgr.py",
       "count": 4
     },
     {
-      "filePath": "README.md",
+      "filePath": "micropython/uptime_kuma.py",
       "count": 4
+    },
+    {
+      "filePath": "README.md",
+      "count": 3
+    },
+    {
+      "filePath": "micropython/config/config.conf",
+      "count": 2
     },
     {
       "filePath": "programflow.mmd",
@@ -768,25 +765,20 @@
     {
       "filePath": "3d/ledHole-5.stl",
       "count": 1
-    },
-    {
-      "filePath": "3d/ledHole.scad",
-      "count": 1
     }
   ],
   "git": {
     "available": true,
     "branch": "feat/config_manager",
-    "headSummary": "2026-08-25 0bd72cc feat: gitignore to ignore config file.",
-    "statusSummary": "4 modifieds, 1 deleted, 1 untracked",
-    "changedFileCount": 6,
+    "headSummary": "2026-08-25 9626182 fix: rename config file",
+    "statusSummary": "5 modifieds",
+    "changedFileCount": 5,
     "statusLines": [
       "M .gitignore",
       "M graphify-out/WORKSPACE_MEMORY.md",
-      "D micropython/config/kuma.conf",
+      "M micropython/config/config.conf",
       "M workspace.json",
-      "M workspacememory.md",
-      "?? micropython/config/config.conf"
+      "M workspacememory.md"
     ],
     "error": ""
   },

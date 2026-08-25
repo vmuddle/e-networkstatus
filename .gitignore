@@ -1,1 +1,1 @@
-micropython/config/none.conf
+micropython/config/*.conf
