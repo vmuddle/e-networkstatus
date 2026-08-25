@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T03:51:04.181Z",
-  "generatedAtEpochMs": 1787629864181,
+  "generatedAt": "2026-08-25T06:06:42.149Z",
+  "generatedAtEpochMs": 1787638002149,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -14,7 +14,7 @@
   "workspace": {
     "name": "e-networkstatus",
     "root": "c:\\github\\e-networkstatus",
-    "activeFile": "README.md",
+    "activeFile": ".gitignore",
     "refreshReason": "tracked-change",
     "outputFiles": {
       "markdown": "graphify-out/WORKSPACE_MEMORY.md",
@@ -22,17 +22,12 @@
       "structuredManifest": "workspace.json"
     },
     "suggestedStartingPoints": [
-      "README.md",
       ".gitignore",
-      "micropython/config/kuma.conf",
-      "programflow.mmd",
-      "micropython/config_mgr.py",
-      "micropython/uptime_kuma.py",
-      "micropython/config/config.conf",
-      "doc/kuma-network.jpg"
+      "schematic/e-networkstatus.aelm",
+      "README.md"
     ],
     "stats": {
-      "totalFiles": 23,
+      "totalFiles": 27,
       "topLevelAreas": [
         {
           "name": "3d",
@@ -47,6 +42,10 @@
           "count": 5
         },
         {
+          "name": "schematic",
+          "count": 4
+        },
+        {
           "name": "doc",
           "count": 2
         }
@@ -58,6 +57,14 @@
         },
         {
           "name": ".3mf",
+          "count": 2
+        },
+        {
+          "name": ".aelm",
+          "count": 2
+        },
+        {
+          "name": ".exe",
           "count": 2
         },
         {
@@ -75,14 +82,6 @@
         {
           "name": ".scad",
           "count": 2
-        },
-        {
-          "name": ".conf",
-          "count": 1
-        },
-        {
-          "name": ".exe",
-          "count": 1
         }
       ],
       "keyFiles": [
@@ -217,6 +216,30 @@
           "isKeyFile": true
         },
         {
+          "path": "schematic/aelm.exe",
+          "topLevelArea": "schematic",
+          "extension": ".exe",
+          "isKeyFile": false
+        },
+        {
+          "path": "schematic/e-networkstatus.aelm",
+          "topLevelArea": "schematic",
+          "extension": ".aelm",
+          "isKeyFile": false
+        },
+        {
+          "path": "schematic/e-networkstatus.png",
+          "topLevelArea": "schematic",
+          "extension": ".png",
+          "isKeyFile": false
+        },
+        {
+          "path": "schematic/sample.aelm",
+          "topLevelArea": "schematic",
+          "extension": ".aelm",
+          "isKeyFile": false
+        },
+        {
           "path": "workspace.json",
           "topLevelArea": "[root]",
           "extension": ".json",
@@ -236,17 +259,41 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-25T03:51:02.512Z",
+    "lastActivityAt": "2026-08-25T06:06:40.417Z",
     "trackedChangeCount": 40,
-    "trackedFileSnapshotCount": 20,
+    "trackedFileSnapshotCount": 22,
     "changeTypeCounts": {
-      "save": 30,
-      "create": 8,
+      "save": 40,
+      "create": 0,
       "delete": 0,
-      "rename": 2
+      "rename": 0
     }
   },
   "trackedSnapshots": [
+    {
+      "filePath": ".gitignore",
+      "updatedAt": 1787638000417,
+      "lineCount": 3,
+      "charCount": 47,
+      "hash": "fb0d5f42469a",
+      "preview": "micropython/config/*.conf / schematic/aelm.exe"
+    },
+    {
+      "filePath": "schematic/e-networkstatus.aelm",
+      "updatedAt": 1787637949075,
+      "lineCount": 175,
+      "charCount": 5070,
+      "hash": "d00712c53c19",
+      "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {..."
+    },
+    {
+      "filePath": "schematic/sample.aelm",
+      "updatedAt": 1787631391984,
+      "lineCount": 157,
+      "charCount": 6851,
+      "hash": "0049d08f4c0f",
+      "preview": "# aelm-version: 0.3.1 / // title: AELM Multi-Unit IC — Sallen-Key Band-Pass Filter (LM358) / // topic: dsl-stdlib / // tags: #AELM #EDA #DSL #Tutorial #OpAmp #Filter / // hint: A Sallen-Key band-pass filter built from..."
+    },
     {
       "filePath": "README.md",
       "updatedAt": 1787629862512,
@@ -280,499 +327,510 @@
       "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_passwords / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /..."
     },
     {
-      "filePath": ".gitignore",
-      "updatedAt": 1787628706239,
-      "lineCount": 2,
-      "charCount": 27,
-      "hash": "d284529f6fea",
-      "preview": "micropython/config/*.conf"
-    },
-    {
       "filePath": "micropython/uptime_kuma.py",
       "updatedAt": 1787611651931,
       "lineCount": 115,
       "charCount": 3794,
       "hash": "8c456164537f",
       "preview": "import network, time / import urequests / from machine import Pin / from configmgr import * / myconfigfile = ConfigFile('config.conf') / myconfigfile.read() / myconfig = myconfigfile.config / print(myconfig) / # This..."
-    },
-    {
-      "filePath": "micropython/configmgr.py",
-      "updatedAt": 1787610786324.9045,
-      "lineCount": 93,
-      "charCount": 3591,
-      "hash": "7f3f2617f9d4",
-      "preview": "import re / class ConfigFile: / def __init__(self, filename): / self.filename = 'config/{}'.format(filename) / self.sections = [] / self.config = {} / def read(self): / configfile = open(self.filename) / sectionre = r..."
-    },
-    {
-      "filePath": "3d/ping_case_back.3mf",
-      "updatedAt": 1734838002119.0916,
-      "lineCount": 132,
-      "charCount": 31704,
-      "hash": "6534dea88bb1",
-      "preview": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000Uk�Y\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml��Kj�0\u0010��9�ж�r[(��΢�\u0013�\u0007\u0010��\u0016�FB\u001a\u0007��\u001dŅ�!�r�?>��\u001eW��\u0019R�\u0001;y_7R\u0000�0X�:�y����?���\bY�\u0017s'g���T63x��\u0010\u0001Y\u0019C��L���|�\t�C�<)\u0013�\u0000���!��h�`ԋ#񾲰�\u0013�,��f-�N�\u0018�5�XWg\u001cv��Qs��ɳ���R]a�0��\u0001�ŏ�׸..."
     }
   ],
   "recentChanges": [
     {
       "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 17: inserted 3 lines.",
-      "recordedAt": "2026-08-25T03:51:02.512Z",
-      "recordedAtEpochMs": 1787629862512,
-      "before": {
-        "kind": "text",
-        "lineCount": 19,
-        "charCount": 1007,
-        "hash": "b944b5ad8381",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
-        "updatedAt": 1787629862512
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 21,
-        "charCount": 1132,
-        "hash": "7dd8927ef21c",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
-        "updatedAt": 1787629862512
-      },
-      "diff": {
-        "lineStart": 17,
-        "removedLines": 0,
-        "addedLines": 3,
-        "summary": "Line 17: inserted 3 lines.",
-        "beforeFragment": "",
-        "afterFragment": "config manager](micropython/configmgr.py) / - [github repo](https://github.com/Uthayamurthy/ConfigManager-Micropython) / - ["
-      }
-    },
-    {
-      "type": "save",
-      "path": "programflow.mmd",
-      "toPath": "",
-      "summary": "Saved without a textual diff.",
-      "recordedAt": "2026-08-25T03:49:04.870Z",
-      "recordedAtEpochMs": 1787629744870,
-      "before": {
-        "kind": "text",
-        "lineCount": 37,
-        "charCount": 1259,
-        "hash": "3e97edbc1014",
-        "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize...",
-        "updatedAt": 1787629744870
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 37,
-        "charCount": 1259,
-        "hash": "3e97edbc1014",
-        "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize...",
-        "updatedAt": 1787629744870
-      },
-      "diff": null
-    },
-    {
-      "type": "save",
-      "path": "programflow.mmd",
-      "toPath": "",
-      "summary": "Saved without a textual diff.",
-      "recordedAt": "2026-08-25T03:48:59.307Z",
-      "recordedAtEpochMs": 1787629739307,
-      "before": {
-        "kind": "text",
-        "lineCount": 37,
-        "charCount": 1259,
-        "hash": "3e97edbc1014",
-        "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize...",
-        "updatedAt": 1787629739307
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 37,
-        "charCount": 1259,
-        "hash": "3e97edbc1014",
-        "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize...",
-        "updatedAt": 1787629739307
-      },
-      "diff": null
-    },
-    {
-      "type": "save",
-      "path": "programflow.mmd",
-      "toPath": "",
-      "summary": "",
-      "recordedAt": "2026-08-25T03:48:35.296Z",
-      "recordedAtEpochMs": 1787629715296,
-      "before": null,
-      "after": null,
-      "diff": null
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 9: inserted 2 lines.",
-      "recordedAt": "2026-08-25T03:44:49.789Z",
-      "recordedAtEpochMs": 1787629489789,
-      "before": {
-        "kind": "text",
-        "lineCount": 18,
-        "charCount": 791,
-        "hash": "4c6d831a2be3",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
-        "updatedAt": 1787629489789
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 19,
-        "charCount": 1007,
-        "hash": "b944b5ad8381",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
-        "updatedAt": 1787629489789
-      },
-      "diff": {
-        "lineStart": 9,
-        "removedLines": 0,
-        "addedLines": 2,
-        "summary": "Line 9: inserted 2 lines.",
-        "beforeFragment": "",
-        "afterFragment": "- Things to be checked, need to be added to ANY status page inside Uptime Kuma, as this makes the BADGE for that page become public.  If you skip this step, you would get a \"N/A..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: inserted 18 lines.",
-      "recordedAt": "2026-08-25T03:43:43.134Z",
-      "recordedAtEpochMs": 1787629423134,
-      "before": {
-        "kind": "text",
-        "lineCount": 0,
-        "charCount": 0,
-        "hash": "empty",
-        "preview": "",
-        "updatedAt": 1787629423134
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 18,
-        "charCount": 791,
-        "hash": "4c6d831a2be3",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
-        "updatedAt": 1787629423134
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 0,
-        "addedLines": 18,
-        "summary": "Line 1: inserted 18 lines.",
-        "beforeFragment": "",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "create",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-25T03:43:39.114Z",
-      "recordedAtEpochMs": 1787629419114,
-      "before": null,
-      "after": {
-        "kind": "text",
-        "lineCount": 0,
-        "charCount": 0,
-        "hash": "empty",
-        "preview": "",
-        "updatedAt": 1787629419082.6777,
-        "extension": ".md",
-        "sizeBytes": 0
-      },
-      "diff": null
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: replaced 16 lines with 18 lines.",
-      "recordedAt": "2026-08-25T03:40:07.988Z",
-      "recordedAtEpochMs": 1787629207988,
-      "before": {
-        "kind": "text",
-        "lineCount": 16,
-        "charCount": 1460,
-        "hash": "04c9812054eb",
-        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
-        "updatedAt": 1787629207988
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 18,
-        "charCount": 791,
-        "hash": "4c6d831a2be3",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
-        "updatedAt": 1787629207988
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 16,
-        "addedLines": 18,
-        "summary": "Line 1: replaced 16 lines with 18 lines.",
-        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: replaced 16 lines with 16 lines.",
-      "recordedAt": "2026-08-25T03:38:52.128Z",
-      "recordedAtEpochMs": 1787629132128,
-      "before": {
-        "kind": "text",
-        "lineCount": 16,
-        "charCount": 1448,
-        "hash": "f9c8884f1dba",
-        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
-        "updatedAt": 1787629132128
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 16,
-        "charCount": 729,
-        "hash": "63cbc3dd1cdf",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
-        "updatedAt": 1787629132128
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 16,
-        "addedLines": 16,
-        "summary": "Line 1: replaced 16 lines with 16 lines.",
-        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: replaced 16 lines with 16 lines.",
-      "recordedAt": "2026-08-25T03:38:38.757Z",
-      "recordedAtEpochMs": 1787629118757,
-      "before": {
-        "kind": "text",
-        "lineCount": 16,
-        "charCount": 1444,
-        "hash": "c99bc7f2e84d",
-        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
-        "updatedAt": 1787629118757
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 16,
-        "charCount": 723,
-        "hash": "c2ae1864a308",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
-        "updatedAt": 1787629118757
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 16,
-        "addedLines": 16,
-        "summary": "Line 1: replaced 16 lines with 16 lines.",
-        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: replaced 16 lines with 16 lines.",
-      "recordedAt": "2026-08-25T03:38:14.006Z",
-      "recordedAtEpochMs": 1787629094006,
-      "before": {
-        "kind": "text",
-        "lineCount": 16,
-        "charCount": 1432,
-        "hash": "44400be277c4",
-        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
-        "updatedAt": 1787629094006
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 16,
-        "charCount": 721,
-        "hash": "ff8e01e0f9d4",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / ![Kuma monitor](doc/kuma-network-small.j...",
-        "updatedAt": 1787629094006
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 16,
-        "addedLines": 16,
-        "summary": "Line 1: replaced 16 lines with 16 lines.",
-        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "README.md",
-      "toPath": "",
-      "summary": "Line 1: replaced 15 lines with 16 lines.",
-      "recordedAt": "2026-08-25T03:36:11.371Z",
-      "recordedAtEpochMs": 1787628971371,
-      "before": {
-        "kind": "text",
-        "lineCount": 15,
-        "charCount": 1354,
-        "hash": "4f2c43f0331a",
-        "preview": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y\u0000c\u0000l\u0000i\u0000n\u0000g\u0000 \u0000r\u0000o\u0000o\u0000m\u0000,\u0000 \u0000w\u0000i\u0000t\u0000h\u0000o\u0000u\u0000t\u0000...",
-        "updatedAt": 1787628971371
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 16,
-        "charCount": 715,
-        "hash": "506188ead0c3",
-        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / ![Kuma monitor](doc/kuma-network.jpg) /...",
-        "updatedAt": 1787628971371
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 15,
-        "addedLines": 16,
-        "summary": "Line 1: replaced 15 lines with 16 lines.",
-        "beforeFragment": "��#\u0000 \u0000e\u0000-\u0000n\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000\u0000 / \u0000\u0000 / \u0000T\u0000h\u0000i\u0000s\u0000 \u0000i\u0000s\u0000 \u0000a\u0000 \u0000L\u0000E\u0000D\u0000 \u0000d\u0000a\u0000s\u0000h\u0000b\u0000o\u0000a\u0000r\u0000d\u0000 \u0000t\u0000o\u0000 \u0000d\u0000i\u0000s\u0000p\u0000l\u0000a\u0000y\u0000 \u0000n\u0000e\u0000w\u0000o\u0000r\u0000k\u0000 \u0000s\u0000t\u0000a\u0000t\u0000u\u0000s\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000\"\u0000z\u0000w\u0000i\u0000f\u0000t\u0000\"\u0000 \u0000c\u0000y...",
-        "afterFragment": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. /..."
-      }
-    },
-    {
-      "type": "create",
-      "path": "doc/kuma-network.jpg",
-      "toPath": "",
-      "summary": "Created file.",
-      "recordedAt": "2026-08-25T03:35:41.067Z",
-      "recordedAtEpochMs": 1787628941067,
-      "before": null,
-      "after": {
-        "kind": "file",
-        "extension": ".jpg",
-        "sizeBytes": 1685638,
-        "preview": "Binary or large file; content preview omitted.",
-        "updatedAt": 1787628911495.5046
-      },
-      "diff": null
-    },
-    {
-      "type": "save",
-      "path": "micropython/config/config.conf",
-      "toPath": "",
-      "summary": "Line 3: inserted 1 line.",
-      "recordedAt": "2026-08-25T03:31:50.926Z",
-      "recordedAtEpochMs": 1787628710926,
-      "before": {
-        "kind": "text",
-        "lineCount": 26,
-        "charCount": 535,
-        "hash": "d73b30f9df91",
-        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
-        "updatedAt": 1787628710926
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 26,
-        "charCount": 536,
-        "hash": "f02a3577c5d0",
-        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_passwords / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
-        "updatedAt": 1787628710926
-      },
-      "diff": {
-        "lineStart": 3,
-        "removedLines": 0,
-        "addedLines": 1,
-        "summary": "Line 3: inserted 1 line.",
-        "beforeFragment": "",
-        "afterFragment": "s"
-      }
-    },
-    {
-      "type": "save",
       "path": ".gitignore",
       "toPath": "",
-      "summary": "Saved without a textual diff.",
-      "recordedAt": "2026-08-25T03:31:46.239Z",
-      "recordedAtEpochMs": 1787628706239,
+      "summary": "Line 2: inserted 2 lines.",
+      "recordedAt": "2026-08-25T06:06:40.417Z",
+      "recordedAtEpochMs": 1787638000417,
       "before": {
         "kind": "text",
         "lineCount": 2,
         "charCount": 27,
         "hash": "d284529f6fea",
         "preview": "micropython/config/*.conf",
-        "updatedAt": 1787628706239
+        "updatedAt": 1787638000417
       },
       "after": {
         "kind": "text",
-        "lineCount": 2,
-        "charCount": 27,
-        "hash": "d284529f6fea",
-        "preview": "micropython/config/*.conf",
-        "updatedAt": 1787628706239
+        "lineCount": 3,
+        "charCount": 47,
+        "hash": "fb0d5f42469a",
+        "preview": "micropython/config/*.conf / schematic/aelm.exe",
+        "updatedAt": 1787638000417
+      },
+      "diff": {
+        "lineStart": 2,
+        "removedLines": 0,
+        "addedLines": 2,
+        "summary": "Line 2: inserted 2 lines.",
+        "beforeFragment": "",
+        "afterFragment": "schematic/aelm.exe"
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 1: inserted 175 lines.",
+      "recordedAt": "2026-08-25T06:05:49.075Z",
+      "recordedAtEpochMs": 1787637949075,
+      "before": {
+        "kind": "text",
+        "lineCount": 0,
+        "charCount": 0,
+        "hash": "empty",
+        "preview": "",
+        "updatedAt": 1787637949075
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 175,
+        "charCount": 5070,
+        "hash": "d00712c53c19",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637949075
+      },
+      "diff": {
+        "lineStart": 1,
+        "removedLines": 0,
+        "addedLines": 175,
+        "summary": "Line 1: inserted 175 lines.",
+        "beforeFragment": "",
+        "afterFragment": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } /..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 110: replaced 18 lines with 42 lines.",
+      "recordedAt": "2026-08-25T06:04:52.152Z",
+      "recordedAtEpochMs": 1787637892152,
+      "before": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4022,
+        "hash": "4797ee04ef0a",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637892152
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 163,
+        "charCount": 4730,
+        "hash": "2686b0000be1",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637892152
+      },
+      "diff": {
+        "lineStart": 110,
+        "removedLines": 18,
+        "addedLines": 42,
+        "summary": "Line 110: replaced 18 lines with 42 lines.",
+        "beforeFragment": "50,0) / } / connections { / PICOW.GND4 -> GND / LED0.cathode -> GND / LED1.cathode -> GND / LED2.cathode -> GND / LED3.cathode -> GND / LED4.cathode -> GND / LED5.cathode -> GND...",
+        "afterFragment": "30,0) / } / connections { / PICOW.GND4 -> GND / LED0.cathode -> GND / LED1.cathode -> GND / LED2.cathode -> GND / LED3.cathode -> GND / LED4.cathode -> GND / LED5.cathode -> GND..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 110: replaced 1 line with 1 line.",
+      "recordedAt": "2026-08-25T06:03:03.067Z",
+      "recordedAtEpochMs": 1787637783067,
+      "before": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4013,
+        "hash": "ca17bfb18daa",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637783067
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4022,
+        "hash": "4797ee04ef0a",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637783067
+      },
+      "diff": {
+        "lineStart": 110,
+        "removedLines": 1,
+        "addedLines": 1,
+        "summary": "Line 110: replaced 1 line with 1 line.",
+        "beforeFragment": "(-40,",
+        "afterFragment": "PICOW.GND4(-50,"
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Saved without a textual diff.",
+      "recordedAt": "2026-08-25T06:02:10.357Z",
+      "recordedAtEpochMs": 1787637730357,
+      "before": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4013,
+        "hash": "ca17bfb18daa",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637730357
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4013,
+        "hash": "ca17bfb18daa",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637730357
       },
       "diff": null
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 93: replaced 13 lines with 13 lines.",
+      "recordedAt": "2026-08-25T06:01:37.620Z",
+      "recordedAtEpochMs": 1787637697620,
+      "before": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4026,
+        "hash": "3258041f99b2",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637697620
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4013,
+        "hash": "d9b3a3461b78",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637697620
+      },
+      "diff": {
+        "lineStart": 93,
+        "removedLines": 13,
+        "addedLines": 13,
+        "summary": "Line 93: replaced 13 lines with 13 lines.",
+        "beforeFragment": "15, 0) rot: 180 / LED4: LED place: R4.b(-10, 0) rot: 180 / LED5: LED place: R5.b(-15, 0) rot: 180 / LED6: LED place: R6.b(-10, 0) rot: 180 / LED7: LED place: R7.b(-15, 0) rot: 1...",
+        "afterFragment": "5, 0) rot: 180 / LED4: LED place: R4.b(-5, 0) rot: 180 / LED5: LED place: R5.b(-5, 0) rot: 180 / LED6: LED place: R6.b(-5, 0) rot: 180 / LED7: LED place: R7.b(-5, 0) rot: 180 /..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 90: replaced 3 lines with 3 lines.",
+      "recordedAt": "2026-08-25T06:01:09.096Z",
+      "recordedAtEpochMs": 1787637669096,
+      "before": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4029,
+        "hash": "9c839067652c",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637669096
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4026,
+        "hash": "3258041f99b2",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637669096
+      },
+      "diff": {
+        "lineStart": 90,
+        "removedLines": 3,
+        "addedLines": 3,
+        "summary": "Line 90: replaced 3 lines with 3 lines.",
+        "beforeFragment": "10, 0) rot: 180 / LED1: LED place: R1.b(-15, 0) rot: 180 / LED2: LED place: R2.b(-10",
+        "afterFragment": "5, 0) rot: 180 / LED1: LED place: R1.b(-5, 0) rot: 180 / LED2: LED place: R2.b(-5"
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Saved without a textual diff.",
+      "recordedAt": "2026-08-25T06:00:35.935Z",
+      "recordedAtEpochMs": 1787637635935,
+      "before": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4029,
+        "hash": "9c839067652c",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637635935
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4029,
+        "hash": "9c839067652c",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637635935
+      },
+      "diff": null
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 96: inserted 13 lines.",
+      "recordedAt": "2026-08-25T06:00:22.902Z",
+      "recordedAtEpochMs": 1787637622902,
+      "before": {
+        "kind": "text",
+        "lineCount": 127,
+        "charCount": 3467,
+        "hash": "c62219cacbbc",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637622902
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 139,
+        "charCount": 4031,
+        "hash": "5b0a0808a449",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637622902
+      },
+      "diff": {
+        "lineStart": 96,
+        "removedLines": 0,
+        "addedLines": 13,
+        "summary": "Line 96: inserted 13 lines.",
+        "beforeFragment": "",
+        "afterFragment": "LED6: LED place: R6.b(-10, 0) rot: 180 / LED7: LED place: R7.b(-15, 0) rot: 180 / LED8: LED place: R8.b(-10, 0) rot: 180 / LED9: LED place: R9.b(-15, 0) rot: 180 / LED10: LED pl..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 77: inserted 13 lines.",
+      "recordedAt": "2026-08-25T05:59:20.547Z",
+      "recordedAtEpochMs": 1787637560547,
+      "before": {
+        "kind": "text",
+        "lineCount": 115,
+        "charCount": 2764,
+        "hash": "1ba0aa8f31eb",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637560547
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 127,
+        "charCount": 3467,
+        "hash": "c62219cacbbc",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637560547
+      },
+      "diff": {
+        "lineStart": 77,
+        "removedLines": 0,
+        "addedLines": 13,
+        "summary": "Line 77: inserted 13 lines.",
+        "beforeFragment": "",
+        "afterFragment": "R6: Resistor(value: 51) place: PICOW.GP6(-5, 0) / R7: Resistor(value: 51) place: PICOW.GP7(-10, 0) / R8: Resistor(value: 51) place: PICOW.GP8(-5, 0) / R9: Resistor(value: 51) pl..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 90: replaced 6 lines with 7 lines.",
+      "recordedAt": "2026-08-25T05:57:56.864Z",
+      "recordedAtEpochMs": 1787637476864,
+      "before": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2731,
+        "hash": "1a9aa24378aa",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637476864
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 115,
+        "charCount": 2764,
+        "hash": "1ba0aa8f31eb",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637476864
+      },
+      "diff": {
+        "lineStart": 90,
+        "removedLines": 6,
+        "addedLines": 7,
+        "summary": "Line 90: replaced 6 lines with 7 lines.",
+        "beforeFragment": "LED0.cathode -> G1 / LED1.cathode -> G1 / LED2.cathode -> G1 / LED3.cathode -> G1 / LED4.cathode -> G1 / LED5.cathode -> G1",
+        "afterFragment": "PICOW.GND4 -> GND / LED0.cathode -> GND / LED1.cathode -> GND / LED2.cathode -> GND / LED3.cathode -> GND / LED4.cathode -> GND / LED5.cathode -> GND"
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 86: replaced 1 line with 1 line.",
+      "recordedAt": "2026-08-25T05:56:47.034Z",
+      "recordedAtEpochMs": 1787637407034,
+      "before": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2731,
+        "hash": "3728efdf95cd",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637407034
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2731,
+        "hash": "1a9aa24378aa",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637407034
+      },
+      "diff": {
+        "lineStart": 86,
+        "removedLines": 1,
+        "addedLines": 1,
+        "summary": "Line 86: replaced 1 line with 1 line.",
+        "beforeFragment": "3",
+        "afterFragment": "4"
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 72: replaced 12 lines with 12 lines.",
+      "recordedAt": "2026-08-25T05:56:21.006Z",
+      "recordedAtEpochMs": 1787637381006,
+      "before": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2725,
+        "hash": "274a4688be2d",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637381006
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2731,
+        "hash": "3728efdf95cd",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637381006
+      },
+      "diff": {
+        "lineStart": 72,
+        "removedLines": 12,
+        "addedLines": 12,
+        "summary": "Line 72: replaced 12 lines with 12 lines.",
+        "beforeFragment": "5, 0) / R2: Resistor(value: 51) place: PICOW.GP2(-5, 0) / R3: Resistor(value: 51) place: PICOW.GP3(-5, 0) / R4: Resistor(value: 51) place: PICOW.GP4(-5, 0) / R5: Resistor(value:...",
+        "afterFragment": "10, 0) / R2: Resistor(value: 51) place: PICOW.GP2(-5, 0) / R3: Resistor(value: 51) place: PICOW.GP3(-10, 0) / R4: Resistor(value: 51) place: PICOW.GP4(-5, 0) / R5: Resistor(valu..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 79: replaced 31 lines with 31 lines.",
+      "recordedAt": "2026-08-25T05:54:53.788Z",
+      "recordedAtEpochMs": 1787637293788,
+      "before": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2746,
+        "hash": "05674e59b6d4",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637293788
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2725,
+        "hash": "274a4688be2d",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637293788
+      },
+      "diff": {
+        "lineStart": 79,
+        "removedLines": 31,
+        "addedLines": 31,
+        "summary": "Line 79: replaced 31 lines with 31 lines.",
+        "beforeFragment": "5, 0) rot: 180 / LED2: LED place: R2.b(-5, 0) rot: 180 / LED3: LED place: R3.b(-5, 0) rot: 180 / LED4: LED place: R4.b(-5, 0) rot: 180 / LED5: LED place: R5.b(-5, 0) rot: 180 /...",
+        "afterFragment": "10, 0) rot: 180 / LED2: LED place: R2.b(-5, 0) rot: 180 / LED3: LED place: R3.b(-10, 0) rot: 180 / LED4: LED place: R4.b(-5, 0) rot: 180 / LED5: LED place: R5.b(-10, 0) rot: 180..."
+      }
+    },
+    {
+      "type": "save",
+      "path": "schematic/e-networkstatus.aelm",
+      "toPath": "",
+      "summary": "Line 78: replaced 1 line with 1 line.",
+      "recordedAt": "2026-08-25T05:53:59.937Z",
+      "recordedAtEpochMs": 1787637239937,
+      "before": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2747,
+        "hash": "c2646584b8b2",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637239937
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 114,
+        "charCount": 2746,
+        "hash": "05674e59b6d4",
+        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
+        "updatedAt": 1787637239937
+      },
+      "diff": {
+        "lineStart": 78,
+        "removedLines": 1,
+        "addedLines": 1,
+        "summary": "Line 78: replaced 1 line with 1 line.",
+        "beforeFragment": "10",
+        "afterFragment": "5"
+      }
     }
   ],
   "hotFiles": [
     {
-      "filePath": "README.md",
-      "count": 10
+      "filePath": "schematic/e-networkstatus.aelm",
+      "count": 39
     },
     {
       "filePath": ".gitignore",
-      "count": 6
-    },
-    {
-      "filePath": "micropython/config/kuma.conf",
-      "count": 6
-    },
-    {
-      "filePath": "programflow.mmd",
-      "count": 5
-    },
-    {
-      "filePath": "micropython/config_mgr.py",
-      "count": 4
-    },
-    {
-      "filePath": "micropython/uptime_kuma.py",
-      "count": 4
-    },
-    {
-      "filePath": "micropython/config/config.conf",
-      "count": 2
-    },
-    {
-      "filePath": "doc/kuma-network.jpg",
       "count": 1
     }
   ],
   "git": {
     "available": true,
     "branch": "main",
-    "headSummary": "2026-08-25 98d584a fix: update programflow to refelct recent changes to codebase.",
-    "statusSummary": "1 modified",
-    "changedFileCount": 1,
+    "headSummary": "2026-08-25 13d1836 feat: credit to config mgr library",
+    "statusSummary": "4 modifieds, 1 untracked",
+    "changedFileCount": 5,
     "statusLines": [
-      "M README.md"
+      "M .gitignore",
+      "M graphify-out/WORKSPACE_MEMORY.md",
+      "M workspace.json",
+      "M workspacememory.md",
+      "?? schematic/"
     ],
     "error": ""
   },
   "github": {
     "available": true,
-    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 478a45f by Vernon Muddle on 2026-08-25\n  fix: update documentation\n\nURL: https://github.com/vmuddle/e-networkstatus"
+    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 13d1836 by Vernon Muddle on 2026-08-25\n  feat: credit to config mgr library\n\nURL: https://github.com/vmuddle/e-networkstatus"
   },
   "graphify": {
     "reportAvailable": false,

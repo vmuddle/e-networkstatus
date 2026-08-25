@@ -1,0 +1,174 @@
+# aelm-version: 0.6.0
+part Resistor {
+    pins {
+        a: passive @1
+        b: passive @2
+    }
+    symbol: resistor
+}
+
+part LED {
+    pins {
+        anode: passive @1
+        cathode: passive @2
+    }
+    symbol: led
+}
+
+part PICOW {
+    pins {
+        GP0: output @1
+        GP1: output @2
+        GND1: ground @3
+        GP2: ground @4
+        GP3: output @5
+        GP4: output @6
+        GP5: output @7
+        GND2: ground @8
+        GP6: output @9
+        GP7: output @10
+        GP8: output @11
+        GP9: output @12
+        GND3: ground @13
+        GP10: output @14
+        GP11: output @15
+        GP12: output @16
+        GP13: output @17
+        GND4: ground @18
+        GP14: output @19
+        GP15: output @20
+        GP16: output @21
+        GP17: output @22
+        GND5: ground @23
+        GP18: output @24
+        GP19: output @25
+        GP20: output @26
+        GP21: output @27
+        GND6: ground @28
+        GP22: output @29
+        RUN: output @30
+        GP26: output @31
+        GP27: output @32
+        GND7: ground @33
+        GP28: output @34
+        ADCVREF: output @35
+        PW3V3: power @36
+        EN3V3: input @37
+        GND8: ground @38
+        VSYS: power @39 
+        VBUS: power @40
+    }
+    symbol: ic(left: 20, right: 20)
+    
+}
+
+
+module LEDIndicator {
+    nets {
+        GND: ground { symbol: gnd_flag }
+    }
+    instances {
+        R0: Resistor(value: 51) place: PICOW.GP0(-5, 0)
+        R1: Resistor(value: 51) place: PICOW.GP1(-15, 0)
+        R2: Resistor(value: 51) place: PICOW.GP2(-5, 0)
+        R3: Resistor(value: 51) place: PICOW.GP3(-15, 0)
+        R4: Resistor(value: 51) place: PICOW.GP4(-5, 0)
+        R5: Resistor(value: 51) place: PICOW.GP5(-15, 0)
+        R6: Resistor(value: 51) place: PICOW.GP6(-5, 0)
+        R7: Resistor(value: 51) place: PICOW.GP7(-15, 0)
+        R8: Resistor(value: 51) place: PICOW.GP8(-5, 0)
+        R9: Resistor(value: 51) place: PICOW.GP9(-15, 0)
+        R10: Resistor(value: 51) place: PICOW.GP10(-5, 0)
+        R11: Resistor(value: 51) place: PICOW.GP11(-15, 0)
+        R12: Resistor(value: 51) place: PICOW.GP12(-5, 0)
+        R13: Resistor(value: 51) place: PICOW.GP13(-15, 0)
+        R14: Resistor(value: 51) place: PICOW.GP14(-5, 0)
+        R15: Resistor(value: 51) place: PICOW.GP15(-15, 0)
+        R16: Resistor(value: 51) place: PICOW.GP16(5, 0)
+        R17: Resistor(value: 51) place: PICOW.GP17(15,0)
+        
+        LED0: LED place: R0.b(-5, 0) rot: 180
+        LED1: LED place: R1.b(-5, 0) rot: 180
+        LED2: LED place: R2.b(-5, 0) rot: 180
+        LED3: LED place: R3.b(-5, 0) rot: 180
+        LED4: LED place: R4.b(-5, 0) rot: 180
+        LED5: LED place: R5.b(-5, 0) rot: 180
+        LED6: LED place: R6.b(-5, 0) rot: 180
+        LED7: LED place: R7.b(-5, 0) rot: 180
+        LED8: LED place: R8.b(-5, 0) rot: 180
+        LED9: LED place: R9.b(-5, 0) rot: 180
+        LED10: LED place: R10.b(-5, 0) rot: 180
+        LED11: LED place: R11.b(-5, 0) rot: 180
+        LED12: LED place: R12.b(-5, 0) rot: 180
+        LED13: LED place: R13.b(-5, 0) rot: 180
+        LED14: LED place: R14.b(-5, 0) rot: 180
+        LED15: LED place: R15.b(-5, 0) rot: 180
+        LED16: LED place: R16.b(5, 0)
+        LED17: LED place: R17.b(5, 0)
+
+        PICOW: PICOW
+        G1: net GND place: PICOW.GND4(-30,0)
+    }
+    
+    connections {
+        PICOW.GND4 -> GND
+        LED0.cathode -> GND
+        LED1.cathode -> GND
+        LED2.cathode -> GND
+        LED3.cathode -> GND
+        LED4.cathode -> GND
+        LED5.cathode -> GND
+        LED6.cathode -> GND
+        LED7.cathode -> GND
+        LED8.cathode -> GND
+        LED9.cathode -> GND
+        LED10.cathode -> GND
+        LED11.cathode -> GND
+        LED12.cathode -> GND
+        LED13.cathode -> GND
+        LED14.cathode -> GND
+        LED15.cathode -> GND
+        LED16.cathode -> GND
+        LED17.cathode -> GND
+        
+        LED0.anode -> R0.a
+        LED1.anode -> R1.a
+        LED2.anode -> R2.a
+        LED3.anode -> R3.a
+        LED4.anode -> R4.a
+        LED5.anode -> R5.a
+        LED6.anode -> R6.a
+        LED7.anode -> R7.a
+        LED8.anode -> R8.a
+        LED9.anode -> R9.a
+        LED10.anode -> R10.a
+        LED11.anode -> R11.a
+        LED12.anode -> R12.a
+        LED13.anode -> R13.a
+        LED14.anode -> R14.a
+        LED15.anode -> R15.a
+        LED16.anode -> R16.b
+        LED17.anode -> R17.b
+        
+        R0.b -> PICOW.GP0
+        R1.b -> PICOW.GP1
+        R2.b -> PICOW.GP2
+        R3.b -> PICOW.GP3
+        R4.b -> PICOW.GP4
+        R5.b -> PICOW.GP5
+        R6.b -> PICOW.GP6
+        R7.b -> PICOW.GP7
+        R8.b -> PICOW.GP8
+        R9.b -> PICOW.GP9
+        R10.b -> PICOW.GP10
+        R11.b -> PICOW.GP11
+        R12.b -> PICOW.GP12
+        R13.b -> PICOW.GP13
+        R14.b -> PICOW.GP14
+        R15.b -> PICOW.GP15
+        R16.a -> PICOW.GP16
+        R17.a -> PICOW.GP17
+        
+    }
+}
+
