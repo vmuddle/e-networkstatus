@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T03:44:51.444Z",
-  "generatedAtEpochMs": 1787629491444,
+  "generatedAt": "2026-08-25T03:49:07.307Z",
+  "generatedAtEpochMs": 1787629747307,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -14,7 +14,7 @@
   "workspace": {
     "name": "e-networkstatus",
     "root": "c:\\github\\e-networkstatus",
-    "activeFile": "README.md",
+    "activeFile": null,
     "refreshReason": "tracked-change",
     "outputFiles": {
       "markdown": "graphify-out/WORKSPACE_MEMORY.md",
@@ -25,11 +25,11 @@
       "README.md",
       ".gitignore",
       "micropython/config/kuma.conf",
+      "programflow.mmd",
       "micropython/config_mgr.py",
       "micropython/uptime_kuma.py",
       "micropython/config/config.conf",
-      "programflow.mmd",
-      "3d/ping_case_back.stl"
+      "3d/ping_case-5mm-labels.stl"
     ],
     "stats": {
       "totalFiles": 23,
@@ -236,17 +236,25 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-25T03:44:49.789Z",
+    "lastActivityAt": "2026-08-25T03:49:04.870Z",
     "trackedChangeCount": 40,
     "trackedFileSnapshotCount": 20,
     "changeTypeCounts": {
-      "save": 26,
-      "create": 12,
+      "save": 29,
+      "create": 9,
       "delete": 0,
       "rename": 2
     }
   },
   "trackedSnapshots": [
+    {
+      "filePath": "programflow.mmd",
+      "updatedAt": 1787629744870,
+      "lineCount": 37,
+      "charCount": 1259,
+      "hash": "3e97edbc1014",
+      "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize..."
+    },
     {
       "filePath": "README.md",
       "updatedAt": 1787629489789,
@@ -296,14 +304,6 @@
       "preview": "import re / class ConfigFile: / def __init__(self, filename): / self.filename = 'config/{}'.format(filename) / self.sections = [] / self.config = {} / def read(self): / configfile = open(self.filename) / sectionre = r..."
     },
     {
-      "filePath": "programflow.mmd",
-      "updatedAt": 1787529472810.7144,
-      "lineCount": 0,
-      "charCount": 0,
-      "hash": "empty",
-      "preview": ""
-    },
-    {
       "filePath": "3d/ping_case_back.3mf",
       "updatedAt": 1734838002119.0916,
       "lineCount": 132,
@@ -313,6 +313,67 @@
     }
   ],
   "recentChanges": [
+    {
+      "type": "save",
+      "path": "programflow.mmd",
+      "toPath": "",
+      "summary": "Saved without a textual diff.",
+      "recordedAt": "2026-08-25T03:49:04.870Z",
+      "recordedAtEpochMs": 1787629744870,
+      "before": {
+        "kind": "text",
+        "lineCount": 37,
+        "charCount": 1259,
+        "hash": "3e97edbc1014",
+        "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize...",
+        "updatedAt": 1787629744870
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 37,
+        "charCount": 1259,
+        "hash": "3e97edbc1014",
+        "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize...",
+        "updatedAt": 1787629744870
+      },
+      "diff": null
+    },
+    {
+      "type": "save",
+      "path": "programflow.mmd",
+      "toPath": "",
+      "summary": "Saved without a textual diff.",
+      "recordedAt": "2026-08-25T03:48:59.307Z",
+      "recordedAtEpochMs": 1787629739307,
+      "before": {
+        "kind": "text",
+        "lineCount": 37,
+        "charCount": 1259,
+        "hash": "3e97edbc1014",
+        "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize...",
+        "updatedAt": 1787629739307
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 37,
+        "charCount": 1259,
+        "hash": "3e97edbc1014",
+        "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize...",
+        "updatedAt": 1787629739307
+      },
+      "diff": null
+    },
+    {
+      "type": "save",
+      "path": "programflow.mmd",
+      "toPath": "",
+      "summary": "",
+      "recordedAt": "2026-08-25T03:48:35.296Z",
+      "recordedAtEpochMs": 1787629715296,
+      "before": null,
+      "after": null,
+      "diff": null
+    },
     {
       "type": "save",
       "path": "README.md",
@@ -662,97 +723,6 @@
         "beforeFragment": "kuma",
         "afterFragment": "none"
       }
-    },
-    {
-      "type": "save",
-      "path": ".gitignore",
-      "toPath": "",
-      "summary": "Line 1: replaced 1 line with 1 line.",
-      "recordedAt": "2026-08-25T03:31:13.213Z",
-      "recordedAtEpochMs": 1787628673213,
-      "before": {
-        "kind": "text",
-        "lineCount": 2,
-        "charCount": 27,
-        "hash": "d284529f6fea",
-        "preview": "micropython/config/*.conf",
-        "updatedAt": 1787628673213
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 2,
-        "charCount": 30,
-        "hash": "1a1bea9c6fa0",
-        "preview": "micropython/config/kuma.conf",
-        "updatedAt": 1787628673213
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 1,
-        "addedLines": 1,
-        "summary": "Line 1: replaced 1 line with 1 line.",
-        "beforeFragment": "*",
-        "afterFragment": "kuma"
-      }
-    },
-    {
-      "type": "rename",
-      "path": "micropython/config/kuma.conf",
-      "toPath": "micropython/config/config.conf",
-      "summary": "Renamed file.",
-      "recordedAt": "2026-08-25T03:30:51.139Z",
-      "recordedAtEpochMs": 1787628651139,
-      "before": {
-        "kind": "text",
-        "lineCount": 26,
-        "charCount": 535,
-        "hash": "d73b30f9df91",
-        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
-        "updatedAt": 1787628592032
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 26,
-        "charCount": 535,
-        "hash": "d73b30f9df91",
-        "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_password / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /...",
-        "updatedAt": 1787628592034.05,
-        "extension": ".conf",
-        "sizeBytes": 535
-      },
-      "diff": null
-    },
-    {
-      "type": "save",
-      "path": ".gitignore",
-      "toPath": "",
-      "summary": "Line 1: replaced 1 line with 1 line.",
-      "recordedAt": "2026-08-25T03:30:29.349Z",
-      "recordedAtEpochMs": 1787628629349,
-      "before": {
-        "kind": "text",
-        "lineCount": 2,
-        "charCount": 30,
-        "hash": "1a1bea9c6fa0",
-        "preview": "micropython/config/kuma.conf",
-        "updatedAt": 1787628629349
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 2,
-        "charCount": 27,
-        "hash": "d284529f6fea",
-        "preview": "micropython/config/*.conf",
-        "updatedAt": 1787628629349
-      },
-      "diff": {
-        "lineStart": 1,
-        "removedLines": 1,
-        "addedLines": 1,
-        "summary": "Line 1: replaced 1 line with 1 line.",
-        "beforeFragment": "kuma",
-        "afterFragment": "*"
-      }
     }
   ],
   "hotFiles": [
@@ -769,6 +739,10 @@
       "count": 6
     },
     {
+      "filePath": "programflow.mmd",
+      "count": 5
+    },
+    {
       "filePath": "micropython/config_mgr.py",
       "count": 4
     },
@@ -781,31 +755,27 @@
       "count": 2
     },
     {
-      "filePath": "programflow.mmd",
-      "count": 2
-    },
-    {
-      "filePath": "3d/ping_case_back.stl",
+      "filePath": "3d/ping_case-5mm-labels.stl",
       "count": 1
     }
   ],
   "git": {
     "available": true,
     "branch": "main",
-    "headSummary": "2026-08-25 ad8a327 Merge branch 'main' of https://github.com/vmuddle/e-networkstatus",
-    "statusSummary": "4 untrackeds",
+    "headSummary": "2026-08-25 478a45f fix: update documentation",
+    "statusSummary": "4 modifieds",
     "changedFileCount": 4,
     "statusLines": [
-      "?? README.md",
-      "?? graphify-out/",
-      "?? workspace.json",
-      "?? workspacememory.md"
+      "M graphify-out/WORKSPACE_MEMORY.md",
+      "M programflow.mmd",
+      "M workspace.json",
+      "M workspacememory.md"
     ],
     "error": ""
   },
   "github": {
     "available": true,
-    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- ad8a327 by Vernon Muddle on 2026-08-25\n  Merge branch 'main' of https://github.com/vmuddle/e-networkstatus\n\nURL: https://github.com/vmuddle/e-networkstatus"
+    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 478a45f by Vernon Muddle on 2026-08-25\n  fix: update documentation\n\nURL: https://github.com/vmuddle/e-networkstatus"
   },
   "graphify": {
     "reportAvailable": false,

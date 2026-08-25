@@ -1,32 +1,37 @@
 ---
 references:
   - "File: /micropython/uptime_kuma.py"
-generationTime: 2026-08-22T05:14:07.575Z
+generationTime: 2026-08-25T00:00:00.000Z
 ---
 flowchart TD
-    A(["Program Start"]) --> B["Initialize portLookup and GPIO pins"]
-    B --> C["Turn power LED on"]
-    C --> D[["start_network()"]]
+  A(["Program Start"]) --> B["Load and parse config.conf"]
+  B --> C["Read ports and initialize portLookup"]
+  C --> D["Initialize port GPIO pins and lastStatus = False"]
+  D --> E["Initialize power LED GP0 and turn it on"]
+  E --> F[["start_network()"]]
 
-    D --> E["Configure and activate WLAN"]
-    E --> F{"Connected within 10 seconds?"}
-    F -->|No| G["Raise RuntimeError"]
-    F -->|Yes| H["Print network configuration"]
-    H --> I["Enter main loop"]
+  F --> G["Configure and activate WLAN"]
+  G --> H{"Connected within 10 seconds?"}
+  H -->|No| I["Raise RuntimeError"]
+  H -->|Yes| J["Print IP configuration"]
+  J --> K["Initialize powerLedStatus = False"]
 
-    I --> J{"More ports to process?"}
-    J -->|Yes| K["Turn power LED off"]
-    K --> L[["getStatus(statusId)"]]
-    L --> M[["buildUrl(id)"]]
-    M --> N["Request Uptime Kuma status"]
-    N --> O{"Response contains Up?"}
-    O -->|Yes| P["Turn port LED on"]
-    O -->|No| Q["Turn port LED off"]
-    P --> R["Turn power LED on"]
-    Q --> R
-    R --> J
+  K --> L["For each portName, statusId"]
+  L --> M["Print port and briefly toggle port LED from lastStatus"]
+  M --> N[["getStatus(statusId)"]]
+  N --> O[["buildUrl(id)"]]
+  O --> P["Request Uptime Kuma badge status"]
+  P --> Q{"Response contains Up?"}
+  Q -->|Yes| R["Close response and return True"]
+  Q -->|No, but contains Up| S["Print response, close, and return True"]
+  Q -->|No| T["Close response and return False"]
+  R --> U["Store lastStatus and set port LED"]
+  S --> U
+  T --> U
+  U --> V{"More ports to process?"}
+  V -->|Yes| M
+  V -->|No| W["Repeat 20 times: sleep 0.2 seconds"]
+  W --> X["Toggle powerLedStatus and power LED"]
+  X --> L
 
-    J -->|No| S["Sleep 10 seconds"]
-    S --> I
-
-    G --> T(["Program Exit"])
+  I --> Y(["Program Exit"])
