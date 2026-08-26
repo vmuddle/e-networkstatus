@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-26T01:29:04.646Z",
-  "generatedAtEpochMs": 1787707744646,
+  "generatedAt": "2026-08-26T01:34:29.509Z",
+  "generatedAtEpochMs": 1787708069509,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -14,7 +14,7 @@
   "workspace": {
     "name": "e-networkstatus",
     "root": "c:\\github\\e-networkstatus",
-    "activeFile": ".gitignore",
+    "activeFile": "README.md",
     "refreshReason": "tracked-change",
     "outputFiles": {
       "markdown": "graphify-out/WORKSPACE_MEMORY.md",
@@ -22,15 +22,16 @@
       "structuredManifest": "workspace.json"
     },
     "suggestedStartingPoints": [
-      ".gitignore",
-      "schematic/e-networkstatus.aelm",
       "README.md",
+      "schematic/e-networkstatus.aelm",
+      ".gitignore",
+      "micropython/main.py",
       "schematic/aelm.exe",
       "schematic/sample.aelm",
       "schematic/e-networkstatus/.history/.gitignore"
     ],
     "stats": {
-      "totalFiles": 32,
+      "totalFiles": 31,
       "topLevelAreas": [
         {
           "name": "3d",
@@ -38,7 +39,7 @@
         },
         {
           "name": "schematic",
-          "count": 9
+          "count": 8
         },
         {
           "name": "[root]",
@@ -190,6 +191,12 @@
           "isKeyFile": false
         },
         {
+          "path": "micropython/main.py",
+          "topLevelArea": "micropython",
+          "extension": ".py",
+          "isKeyFile": false
+        },
+        {
           "path": "micropython/RPI_PICO_W-20241025-v1.24.0.uf2",
           "topLevelArea": "micropython",
           "extension": ".uf2",
@@ -199,12 +206,6 @@
           "path": "micropython/thonny-4.1.6.exe",
           "topLevelArea": "micropython",
           "extension": ".exe",
-          "isKeyFile": false
-        },
-        {
-          "path": "micropython/uptime_kuma.py",
-          "topLevelArea": "micropython",
-          "extension": ".py",
           "isKeyFile": false
         },
         {
@@ -235,12 +236,6 @@
           "path": "schematic/e-networkstatus/.history/README.txt",
           "topLevelArea": "schematic",
           "extension": ".txt",
-          "isKeyFile": false
-        },
-        {
-          "path": "schematic/e-networkstatus/~e-networkstatus.kicad_sch.lck",
-          "topLevelArea": "schematic",
-          "extension": ".lck",
           "isKeyFile": false
         },
         {
@@ -293,17 +288,25 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-26T01:29:02.974Z",
+    "lastActivityAt": "2026-08-26T01:34:27.850Z",
     "trackedChangeCount": 40,
     "trackedFileSnapshotCount": 20,
     "changeTypeCounts": {
-      "save": 37,
+      "save": 36,
       "create": 0,
       "delete": 3,
-      "rename": 0
+      "rename": 1
     }
   },
   "trackedSnapshots": [
+    {
+      "filePath": "README.md",
+      "updatedAt": 1787708067850,
+      "lineCount": 26,
+      "charCount": 1247,
+      "hash": "af54c2b0e635",
+      "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small..."
+    },
     {
       "filePath": ".gitignore",
       "updatedAt": 1787707742974,
@@ -313,20 +316,20 @@
       "preview": "micropython/config/*.conf / schematic/e-networkstatus/~e-networkstatus.kicad_sch.lck / schematic/e-networkstatus/.history"
     },
     {
-      "filePath": "README.md",
-      "updatedAt": 1787707611679,
-      "lineCount": 26,
-      "charCount": 1255,
-      "hash": "93c481d99d80",
-      "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small..."
-    },
-    {
       "filePath": "programflow.mmd",
       "updatedAt": 1787629744870,
       "lineCount": 37,
       "charCount": 1259,
       "hash": "3e97edbc1014",
       "preview": "--- / references: / - \"File: /micropython/uptime_kuma.py\" / generationTime: 2026-08-25T00:00:00.000Z / --- / flowchart TD / A([\"Program Start\"]) --> B[\"Load and parse config.conf\"] / B --> C[\"Read ports and initialize..."
+    },
+    {
+      "filePath": "micropython/main.py",
+      "updatedAt": 1787629252286.634,
+      "lineCount": 132,
+      "charCount": 4094,
+      "hash": "22f66e3d1f6e",
+      "preview": "import network, time / import urequests / from machine import Pin / from configmgr import * / myconfigfile = ConfigFile('config.conf') / myconfigfile.read() / myconfig = myconfigfile.config / print(myconfig) / ports=m..."
     },
     {
       "filePath": "doc/kuma-network.jpg",
@@ -343,14 +346,6 @@
       "charCount": 536,
       "hash": "f02a3577c5d0",
       "preview": "[wifi] / ssid = your_wifi_ssid / password = your_wifi_passwords / [kuma] / base_url=http://10.0.0.8:3001 # Uptime Kuma - BASE URL. / [ports] / GP1=23 # Internet / GP2=1 # Garage / GP3=44 # Pihole / GP4=26 # switch A /..."
-    },
-    {
-      "filePath": "micropython/uptime_kuma.py",
-      "updatedAt": 1787611651931,
-      "lineCount": 115,
-      "charCount": 3794,
-      "hash": "8c456164537f",
-      "preview": "import network, time / import urequests / from machine import Pin / from configmgr import * / myconfigfile = ConfigFile('config.conf') / myconfigfile.read() / myconfig = myconfigfile.config / print(myconfig) / # This..."
     },
     {
       "filePath": "micropython/configmgr.py",
@@ -370,6 +365,65 @@
     }
   ],
   "recentChanges": [
+    {
+      "type": "save",
+      "path": "README.md",
+      "toPath": "",
+      "summary": "Line 21: replaced 2 lines with 2 lines.",
+      "recordedAt": "2026-08-26T01:34:27.850Z",
+      "recordedAtEpochMs": 1787708067850,
+      "before": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 1255,
+        "hash": "93c481d99d80",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
+        "updatedAt": 1787708067850
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 26,
+        "charCount": 1247,
+        "hash": "af54c2b0e635",
+        "preview": "# e-networkstatus / This is a LED dashboard to display nework status in the \"zwift\" cycling room, without having to open ones \"technology\" to check if the network is healthy. / - ![Kuma monitor](doc/kuma-network-small...",
+        "updatedAt": 1787708067850
+      },
+      "diff": {
+        "lineStart": 21,
+        "removedLines": 2,
+        "addedLines": 2,
+        "summary": "Line 21: replaced 2 lines with 2 lines.",
+        "beforeFragment": "uptime_kuma.py](micropython/uptime_kuma.py) / - [",
+        "afterFragment": "main.py](micropython/main.py) / - [LIB -"
+      }
+    },
+    {
+      "type": "rename",
+      "path": "micropython/uptime_kuma.py",
+      "toPath": "micropython/main.py",
+      "summary": "Renamed file.",
+      "recordedAt": "2026-08-26T01:33:51.020Z",
+      "recordedAtEpochMs": 1787708031020,
+      "before": {
+        "kind": "text",
+        "lineCount": 115,
+        "charCount": 3794,
+        "hash": "8c456164537f",
+        "preview": "import network, time / import urequests / from machine import Pin / from configmgr import * / myconfigfile = ConfigFile('config.conf') / myconfigfile.read() / myconfig = myconfigfile.config / print(myconfig) / # This...",
+        "updatedAt": 1787611651931
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 132,
+        "charCount": 4094,
+        "hash": "22f66e3d1f6e",
+        "preview": "import network, time / import urequests / from machine import Pin / from configmgr import * / myconfigfile = ConfigFile('config.conf') / myconfigfile.read() / myconfig = myconfigfile.config / print(myconfig) / ports=m...",
+        "updatedAt": 1787629252286.634,
+        "extension": ".py",
+        "sizeBytes": 4094
+      },
+      "diff": null
+    },
     {
       "type": "save",
       "path": ".gitignore",
@@ -722,76 +776,12 @@
         "updatedAt": 1787637730357
       },
       "diff": null
-    },
-    {
-      "type": "save",
-      "path": "schematic/e-networkstatus.aelm",
-      "toPath": "",
-      "summary": "Line 93: replaced 13 lines with 13 lines.",
-      "recordedAt": "2026-08-25T06:01:37.620Z",
-      "recordedAtEpochMs": 1787637697620,
-      "before": {
-        "kind": "text",
-        "lineCount": 139,
-        "charCount": 4026,
-        "hash": "3258041f99b2",
-        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
-        "updatedAt": 1787637697620
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 139,
-        "charCount": 4013,
-        "hash": "d9b3a3461b78",
-        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
-        "updatedAt": 1787637697620
-      },
-      "diff": {
-        "lineStart": 93,
-        "removedLines": 13,
-        "addedLines": 13,
-        "summary": "Line 93: replaced 13 lines with 13 lines.",
-        "beforeFragment": "15, 0) rot: 180 / LED4: LED place: R4.b(-10, 0) rot: 180 / LED5: LED place: R5.b(-15, 0) rot: 180 / LED6: LED place: R6.b(-10, 0) rot: 180 / LED7: LED place: R7.b(-15, 0) rot: 1...",
-        "afterFragment": "5, 0) rot: 180 / LED4: LED place: R4.b(-5, 0) rot: 180 / LED5: LED place: R5.b(-5, 0) rot: 180 / LED6: LED place: R6.b(-5, 0) rot: 180 / LED7: LED place: R7.b(-5, 0) rot: 180 /..."
-      }
-    },
-    {
-      "type": "save",
-      "path": "schematic/e-networkstatus.aelm",
-      "toPath": "",
-      "summary": "Line 90: replaced 3 lines with 3 lines.",
-      "recordedAt": "2026-08-25T06:01:09.096Z",
-      "recordedAtEpochMs": 1787637669096,
-      "before": {
-        "kind": "text",
-        "lineCount": 139,
-        "charCount": 4029,
-        "hash": "9c839067652c",
-        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
-        "updatedAt": 1787637669096
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 139,
-        "charCount": 4026,
-        "hash": "3258041f99b2",
-        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
-        "updatedAt": 1787637669096
-      },
-      "diff": {
-        "lineStart": 90,
-        "removedLines": 3,
-        "addedLines": 3,
-        "summary": "Line 90: replaced 3 lines with 3 lines.",
-        "beforeFragment": "10, 0) rot: 180 / LED1: LED place: R1.b(-15, 0) rot: 180 / LED2: LED place: R2.b(-10",
-        "afterFragment": "5, 0) rot: 180 / LED1: LED place: R1.b(-5, 0) rot: 180 / LED2: LED place: R2.b(-5"
-      }
     }
   ],
   "hotFiles": [
     {
       "filePath": "schematic/e-networkstatus.aelm",
-      "count": 32
+      "count": 30
     },
     {
       "filePath": ".gitignore",
@@ -799,7 +789,11 @@
     },
     {
       "filePath": "README.md",
-      "count": 2
+      "count": 3
+    },
+    {
+      "filePath": "micropython/main.py",
+      "count": 1
     },
     {
       "filePath": "schematic/aelm.exe",
@@ -813,18 +807,23 @@
   "git": {
     "available": true,
     "branch": "main",
-    "headSummary": "2026-08-26 f9fd28e feat: Schematic",
-    "statusSummary": "1 modified",
-    "changedFileCount": 2,
+    "headSummary": "2026-08-26 b1199d9 update gitignore",
+    "statusSummary": "4 modifieds, 1 deleted, 1 untracked",
+    "changedFileCount": 7,
     "statusLines": [
-      "M .gitignore",
-      "? schematic/e-networkstatus/.history"
+      "M README.md",
+      "M graphify-out/WORKSPACE_MEMORY.md",
+      "D micropython/uptime_kuma.py",
+      "? schematic/e-networkstatus/.history",
+      "M workspace.json",
+      "M workspacememory.md",
+      "?? micropython/main.py"
     ],
     "error": ""
   },
   "github": {
     "available": true,
-    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- 56cc5f7 by Vernon Muddle on 2026-08-25\n  feat: Electronics Schematic.\n\nURL: https://github.com/vmuddle/e-networkstatus"
+    "summary": "GitHub Repository: vmuddle/e-networkstatus\nDescription: LED display of network status\nVisibility: public | Default branch: main\nStars: 0 | Forks: 0 | Open issues: 0\n\nLatest commit on main:\n- b1199d9 by Vernon Muddle on 2026-08-26\n  update gitignore\n\nURL: https://github.com/vmuddle/e-networkstatus"
   },
   "graphify": {
     "reportAvailable": false,

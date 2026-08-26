@@ -18,8 +18,8 @@ This is a LED dashboard to display nework status in the "zwift" cycling room, wi
 ### schematic
 - [schematic](schematic/e-networkstatus/Schematic.png)
 ## software
-- [uptime_kuma.py](micropython/uptime_kuma.py)
-- [config manager](micropython/configmgr.py) 
+- [main.py](micropython/main.py)
+- [LIB - config manager](micropython/configmgr.py) 
   - [github repo](https://github.com/Uthayamurthy/ConfigManager-Micropython)
 - [uptime kuma](https://uptimekuma.co/)
 ## configuration
