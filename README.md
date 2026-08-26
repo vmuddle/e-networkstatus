@@ -12,6 +12,11 @@ This is a LED dashboard to display nework status in the "zwift" cycling room, wi
 - [3d model](3d/ping_case.scad)
 ## electronics
 - raspi pico-w (we need wifi).
+- 5mm LED * 18
+- 51Ω Resistor * 18
+- hookup wire
+### schematic
+- [schematic](schematic/e-networkstatus/Schematic.png)
 ## software
 - [uptime_kuma.py](micropython/uptime_kuma.py)
 - [config manager](micropython/configmgr.py) 
