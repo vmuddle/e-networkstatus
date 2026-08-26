@@ -1,2 +1,3 @@
 micropython/config/*.conf
 schematic/e-networkstatus/~e-networkstatus.kicad_sch.lck
+schematic/e-networkstatus/.history

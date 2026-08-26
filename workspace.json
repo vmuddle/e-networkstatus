@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-26T01:28:04.438Z",
-  "generatedAtEpochMs": 1787707684438,
+  "generatedAt": "2026-08-26T01:29:04.646Z",
+  "generatedAtEpochMs": 1787707744646,
   "generator": {
     "name": "Code Janitor",
     "feature": "workspace-memory"
@@ -293,7 +293,7 @@
     "error": "package.json was not found."
   },
   "currentStack": {
-    "lastActivityAt": "2026-08-26T01:28:02.766Z",
+    "lastActivityAt": "2026-08-26T01:29:02.974Z",
     "trackedChangeCount": 40,
     "trackedFileSnapshotCount": 20,
     "changeTypeCounts": {
@@ -306,11 +306,11 @@
   "trackedSnapshots": [
     {
       "filePath": ".gitignore",
-      "updatedAt": 1787707682766,
-      "lineCount": 3,
-      "charCount": 85,
-      "hash": "014faa0e39c5",
-      "preview": "micropython/config/*.conf / schematic/e-networkstatus/~e-networkstatus.kicad_sch.lck"
+      "updatedAt": 1787707742974,
+      "lineCount": 4,
+      "charCount": 121,
+      "hash": "ed0cf9b3816c",
+      "preview": "micropython/config/*.conf / schematic/e-networkstatus/~e-networkstatus.kicad_sch.lck / schematic/e-networkstatus/.history"
     },
     {
       "filePath": "README.md",
@@ -370,6 +370,38 @@
     }
   ],
   "recentChanges": [
+    {
+      "type": "save",
+      "path": ".gitignore",
+      "toPath": "",
+      "summary": "Line 3: inserted 2 lines.",
+      "recordedAt": "2026-08-26T01:29:02.974Z",
+      "recordedAtEpochMs": 1787707742974,
+      "before": {
+        "kind": "text",
+        "lineCount": 3,
+        "charCount": 85,
+        "hash": "014faa0e39c5",
+        "preview": "micropython/config/*.conf / schematic/e-networkstatus/~e-networkstatus.kicad_sch.lck",
+        "updatedAt": 1787707742974
+      },
+      "after": {
+        "kind": "text",
+        "lineCount": 4,
+        "charCount": 121,
+        "hash": "ed0cf9b3816c",
+        "preview": "micropython/config/*.conf / schematic/e-networkstatus/~e-networkstatus.kicad_sch.lck / schematic/e-networkstatus/.history",
+        "updatedAt": 1787707742974
+      },
+      "diff": {
+        "lineStart": 3,
+        "removedLines": 0,
+        "addedLines": 2,
+        "summary": "Line 3: inserted 2 lines.",
+        "beforeFragment": "",
+        "afterFragment": "schematic/e-networkstatus/.history"
+      }
+    },
     {
       "type": "save",
       "path": ".gitignore",
@@ -754,41 +786,16 @@
         "beforeFragment": "10, 0) rot: 180 / LED1: LED place: R1.b(-15, 0) rot: 180 / LED2: LED place: R2.b(-10",
         "afterFragment": "5, 0) rot: 180 / LED1: LED place: R1.b(-5, 0) rot: 180 / LED2: LED place: R2.b(-5"
       }
-    },
-    {
-      "type": "save",
-      "path": "schematic/e-networkstatus.aelm",
-      "toPath": "",
-      "summary": "Saved without a textual diff.",
-      "recordedAt": "2026-08-25T06:00:35.935Z",
-      "recordedAtEpochMs": 1787637635935,
-      "before": {
-        "kind": "text",
-        "lineCount": 139,
-        "charCount": 4029,
-        "hash": "9c839067652c",
-        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
-        "updatedAt": 1787637635935
-      },
-      "after": {
-        "kind": "text",
-        "lineCount": 139,
-        "charCount": 4029,
-        "hash": "9c839067652c",
-        "preview": "# aelm-version: 0.6.0 / part Resistor { / pins { / a: passive @1 / b: passive @2 / } / symbol: resistor / } / part LED { / pins { / anode: passive @1 / cathode: passive @2 / } / symbol: led / } / part PICOW { / pins {...",
-        "updatedAt": 1787637635935
-      },
-      "diff": null
     }
   ],
   "hotFiles": [
     {
       "filePath": "schematic/e-networkstatus.aelm",
-      "count": 33
+      "count": 32
     },
     {
       "filePath": ".gitignore",
-      "count": 3
+      "count": 4
     },
     {
       "filePath": "README.md",
@@ -806,18 +813,12 @@
   "git": {
     "available": true,
     "branch": "main",
-    "headSummary": "2026-08-25 56cc5f7 feat: Electronics Schematic.",
-    "statusSummary": "5 modifieds, 2 deleteds, 1 untracked",
-    "changedFileCount": 8,
+    "headSummary": "2026-08-26 f9fd28e feat: Schematic",
+    "statusSummary": "1 modified",
+    "changedFileCount": 2,
     "statusLines": [
       "M .gitignore",
-      "M README.md",
-      "M graphify-out/WORKSPACE_MEMORY.md",
-      "D schematic/e-networkstatus.aelm",
-      "D schematic/sample.aelm",
-      "M workspace.json",
-      "M workspacememory.md",
-      "?? schematic/e-networkstatus/"
+      "? schematic/e-networkstatus/.history"
     ],
     "error": ""
   },
